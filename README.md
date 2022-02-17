@@ -1,3 +1,5 @@
 # joaquinsolla.github.io
 
- > Mi página web de presentación: https://joaquinsolla.github.io/
+ > Mi web de proyectos personales: https://joaquinsolla.github.io/
+ > 
+ > Joaquín. 
