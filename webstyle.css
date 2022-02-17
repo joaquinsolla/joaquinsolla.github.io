@@ -7,6 +7,7 @@ body {
 h1{
     font-size: 50px;
     margin-top: 50px;
+    text-align: center;
 }
 
 a:link, a:visited{
@@ -37,7 +38,8 @@ p{
     }
 
     .main_content{
-        font-size: 14px;
+        text-align: justify;
+        font-size: 15px;
     }
 
     .logo{
