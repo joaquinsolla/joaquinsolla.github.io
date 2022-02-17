@@ -10,6 +10,10 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
 a:link, a:visited{
     color: black;
 }
@@ -18,11 +22,14 @@ p{
     line-height: 1.75;
 }
 
+ul{
+    display: inline-block;
+}
+
 .main_content{
     margin-top: 0;
     margin-bottom: 10px;
     border: none;
-    text-decoration: none;
     text-align: center;
     font-size: 17px;
 }
