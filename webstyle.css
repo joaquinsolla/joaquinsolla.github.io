@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Verdana, Helvetica, sans-serif;
     text-align: left;
+    font-weight: normal;
 }
 
 h1{
@@ -8,22 +9,38 @@ h1{
     margin-top: 50px;
 }
 
-a:link{
+a:link, a:visited{
     color: black;
-}
-
-a:visited{
-    color: dimgrey;
 }
 
 p{
     line-height: 1.75;
 }
 
+.main_content{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.logo{
+    height: 50px;
+}
+
 @media (max-width: 720px) {
     h1{
         font-size: 30px;
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
+    .main_content{
+        font-size: 14px;
+    }
+
+    .logo{
+        height: 30px;
+    }
 }
