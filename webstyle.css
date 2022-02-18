@@ -2,6 +2,7 @@ body {
     font-family: Arial, Verdana, Helvetica, sans-serif;
     text-align: left;
     font-weight: normal;
+    margin: 0;
 }
 
 h1{
@@ -22,6 +23,7 @@ ul{
     display: inline-block;
 }
 
+
 .main_content{
     margin-top: 0;
     margin-bottom: 10px;
@@ -30,8 +32,23 @@ ul{
     font-size: 17px;
 }
 
+.socials{
+    padding-left: 35%;
+    text-align: left;
+}
+
 .logo{
     height: 50px;
+}
+
+.mybanner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.socials_img{
+    height: 25px;
 }
 
 @media (max-width: 720px) {
@@ -48,4 +65,10 @@ ul{
     .logo{
         height: 30px;
     }
+
+    .socials{
+        padding-left: 0;
+        text-align: left;
+    }
+
 }
