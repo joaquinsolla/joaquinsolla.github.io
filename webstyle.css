@@ -11,6 +11,13 @@ h1{
     text-align: center;
 }
 
+hr{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 a:link, a:visited{
     color: black;
 }
@@ -52,9 +59,21 @@ ul{
 }
 
 @media (max-width: 720px) {
+    body {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     h1{
-        font-size: 30px;
+        font-size: 31px;
         margin-top: 20px;
+    }
+
+    hr{
+        margin-top: 50px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .main_content{
@@ -63,7 +82,7 @@ ul{
     }
 
     .logo{
-        height: 30px;
+        height: 31px;
     }
 
     .socials{
@@ -71,4 +90,7 @@ ul{
         text-align: left;
     }
 
+    .end_quote{
+        text-align: center;
+    }
 }
