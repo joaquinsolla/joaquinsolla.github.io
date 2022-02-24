@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+
+/* Styles for website counter container */
+.website-counter, .counter-text {
+    font-weight: bold;
+    text-align: end;
+    margin-right: 50px;
+}
+
 h1{
     font-size: 50px;
     margin-top: 50px;
