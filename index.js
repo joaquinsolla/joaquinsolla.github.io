@@ -10,7 +10,7 @@ if (visitCount) {
     visitCount = 1;
     localStorage.setItem("page_view", 1);
 }
-counterContainer.innerHTML = visitCount;
+counterContainer.innerHTML = "Times you visited this page: " +visitCount;
 
 // Adding onClick event listener
 resetButton.addEventListener("click", () => {
