@@ -73,6 +73,11 @@ ul{
         margin-right: 15px;
     }
 
+    /* Styles for website counter container */
+    .website-counter, .counter-text {
+        margin-right: 5px;
+    }
+
     h1{
         font-size: 30px;
         margin-top: 20px;
