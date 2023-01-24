@@ -40,10 +40,16 @@ p{
     line-height: 2;
 }
 
-@media (max-width: 1200px) {
+.footer_small{display: none;}
+
+@media (max-width: 1300px) {
 
     h1{
         margin-top: 20px;
     }
+
+    .footer_big{display: none}
+
+    .footer_small{display: block}
 
 }

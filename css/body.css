@@ -58,7 +58,7 @@ div .contact_text{
     vertical-align: center
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 
     .body {
         display: flex;
