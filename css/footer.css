@@ -1,0 +1,9 @@
+/* Needed to fill all the space between header and footer */
+footer{ min-height: 40px; display: block; }
+
+footer {
+    text-align: center;
+    background-color: white;
+    color: black;
+    user-select: none;
+}

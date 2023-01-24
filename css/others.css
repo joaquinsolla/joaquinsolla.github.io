@@ -1,0 +1,28 @@
+.logo{
+    height: 50px;
+}
+
+.contact_image{
+    width: 25px;
+    height: 25px;
+}
+
+.spotify{
+    height: 100%;
+    text-align: center;
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+
+    .logo{
+        height: 30px;
+    }
+
+    .spotify{
+        height: 80%;
+        text-align: center;
+        width: 80%;
+    }
+
+}

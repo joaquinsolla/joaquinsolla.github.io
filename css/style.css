@@ -1,0 +1,17 @@
+@import "header.css";
+@import "body.css";
+@import "footer.css";
+@import "text.css";
+@import "others.css";
+
+body {font-family: Helvetica, Arial, Verdana, sans-serif;}
+
+@media (max-width: 1200px) {
+
+    h1{font-size: 35px;}
+
+    h2{font-size: 25px;}
+
+    body{font-size: 15px;}
+
+}

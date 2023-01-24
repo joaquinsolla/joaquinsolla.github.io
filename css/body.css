@@ -1,0 +1,90 @@
+/* Needed to fill all the space between header and footer */
+body{ min-height: 100vh; margin:0; }
+body{ display:flex; flex-direction:column; }
+article{ flex:1; }
+
+article{
+    padding-bottom: 20px;
+}
+
+body {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    text-align: left;
+    font-weight: normal;
+    background-color: white;
+    color: black;
+    user-select: none;
+}
+
+.body_row {
+    flex: 1;
+    display: flex;
+    margin-top: 20px;
+}
+
+.body_center {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.content_left{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    flex: 30%;
+}
+
+.content_center{
+    text-align: center;
+    flex: 40%;
+}
+
+.content_right{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    flex: 30%;
+}
+
+.content_left_small{display: none;}
+
+.content_right_small{display: none;}
+
+div .contact_text{
+    height: 25px;
+    line-height: 25px;
+    vertical-align: center
+}
+
+@media (max-width: 1200px) {
+
+    .body {
+        display: flex;
+    }
+
+    .content_left{display: none}
+
+    .content_right{display: none}
+
+    .content_center{
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 100%;
+    }
+
+    .content_left_small{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .content_right_small{
+
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
