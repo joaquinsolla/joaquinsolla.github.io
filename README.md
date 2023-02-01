@@ -1,5 +1,5 @@
 # joaquinsolla.github.io
 
-  My personal website: _joaquinsolla.com_
+  My personal website: _www.joaquinsolla.com_
   
   Joaquín.
