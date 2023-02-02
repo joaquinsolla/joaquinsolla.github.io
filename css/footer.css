@@ -21,3 +21,11 @@ li.footer{
     margin-top: 0;
     margin-bottom: 0;
 }
+
+@media (max-width: 1620px) {
+
+    footer {
+        background: #282828;
+    }
+
+}

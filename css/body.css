@@ -100,4 +100,8 @@ div .contact_text{
         text-align: center;
     }
 
+    .content_area{
+        background: #282828;
+    }
+
 }
