@@ -10,17 +10,19 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/spotify_picker.js"></script>
 </head>
 
-<body>
+<body onload="loadRandomAlbum()">
     <div id="header">
         <header>
-            <h1>Hi! I'm Joaquín Solla <img src="assets/my_logo.png" alt="" class="logo"></h1>
         </header>
     </div>
 
     <article>
-        <div class="body_center">
+        <h1>Hi! I'm Joaquín Solla</h1>
+
+        <div id="intro" class="body_center">
             <p>Currently I'm a Software Engineering student at the <a href="https://www.udc.es/" target="_blank">A Coruña University
                 (UDC)</a>.<br>
                 On my free time I code and learn by creating my own programs and apps.<br></p>
@@ -29,8 +31,9 @@
         <div class="body_row">
 
             <div id="contact_big" class="content_left">
-                <div style="padding-left: 30%">
+                <div style="padding-left: 15%; padding-right: 15%">
                     <h2>You can find me on:</h2>
+                    <div class="content_area">
                         <ul class="contact">
                             <li class="contact">
                                 <img src="assets/twitter.png" alt="" class="contact_image">
@@ -43,25 +46,111 @@
                                 <img src="assets/instagram.png" alt="" class="contact_image">
                                 <div class="contact_text">
                                     <label>&emsp;<b>Instagram:</b> <a
-                                        href="https://instagram.com/joaquin.solla" target="_blank"><i>@joaquin.solla</i></a></label>
+                                            href="https://instagram.com/joaquin.solla" target="_blank"><i>@joaquin.solla</i></a></label>
                                 </div>
                             </li>
                             <li class="contact">
                                 <img src="assets/github.png" alt="" class="contact_image">
                                 <div class="contact_text">
                                     <label>&emsp;<b>GitHub:</b> <a
-                                        href="https://github.com/joaquinsolla" target="_blank"><i>joaquinsolla</i></a></label>
+                                            href="https://github.com/joaquinsolla" target="_blank"><i>joaquinsolla</i></a></label>
                                 </div>
                             </li>
                             <li class="contact">
                                 <img src="assets/linkedin.png" alt="" class="contact_image">
                                 <div class="contact_text">
                                     <label>&emsp;<b>LinkedIn:</b> <a
-                                        href="https://www.linkedin.com/in/joaquinsolla" target="_blank"><i>Joaquín Solla Vázquez</i></a></label>
+                                            href="https://www.linkedin.com/in/joaquinsolla" target="_blank"><i>Joaquín Solla Vázquez</i></a></label>
                                 </div>
                             </li>
                         </ul>
+                    </div>
                     <h2>My emails:</h2>
+                    <div class="content_area">
+                        <ul class="contact">
+                        <li class="contact">
+                            <img src="assets/gmail.png" alt="" class="contact_image">
+                            <div class="contact_text">
+                                <label>&emsp;
+                                    <a href="mailto:joaquinsollavazquez@gmail.com" target="_blank"><i>joaquinsollavazquez@gmail.com</i></a></label>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <img src="assets/udc.png" alt="" class="contact_image">
+                            <div class="contact_text">
+                                <label>&emsp;
+                                    <a href="mailto:joaquin.solla@udc.es" target="_blank"><i>joaquin.solla@udc.es</i></a></label>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cool_things" class="content_center">
+                <h2>Cool things that I've done:</h2>
+                <div class="content_area">
+                    <ul>
+                        <li>An Android word-game based on Wordle: <a
+                                href="https://play.google.com/store/apps/details?id=com.joa.encasillado" target="_blank"><b>Encasillado</b></a>.</li>
+                        <li>A Twitter bot for my game Encasillado: <a
+                                href="https://twitter.com/encasillado_bot" target="_blank"><b>@encasillado_bot</b></a>.</li>
+                        <p><b>...</b></p>
+                        <li><i>Currently working on my Graduation Thesis: another Android app.</i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="widget_big" class="content_right">
+                <div style="padding-left: 15%; padding-right: 15%">
+                    <h2>&nbsp;</h2>
+                    <iframe id="spotify_big" style="border-radius:12px"
+                            src=""
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="body_row" style="margin-top: 0">
+            <div id="contact_small" class="content_left_small">
+                <h2>You can find me on:</h2>
+                <div class="content_area">
+                    <ul class="contact">
+                        <li class="contact">
+                            <img src="assets/twitter.png" alt="" class="contact_image">
+                            <div class="contact_text">
+                                <label>&emsp;<b>Twitter:</b> <a
+                                        href="https://twitter.com/joaquinsolla" target="_blank"><i>@joaquinsolla</i></a></label>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <img src="assets/instagram.png" alt="" class="contact_image">
+                            <div class="contact_text">
+                                <label>&emsp;<b>Instagram:</b> <a
+                                        href="https://instagram.com/joaquin.solla" target="_blank"><i>@joaquin.solla</i></a></label>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <img src="assets/github.png" alt="" class="contact_image">
+                            <div class="contact_text">
+                                <label>&emsp;<b>GitHub:</b> <a
+                                        href="https://github.com/joaquinsolla" target="_blank"><i>joaquinsolla</i></a></label>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <img src="assets/linkedin.png" alt="" class="contact_image">
+                            <div class="contact_text">
+                                <label>&emsp;<b>LinkedIn:</b> <a
+                                        href="https://www.linkedin.com/in/joaquinsolla" target="_blank"><i>Joaquín Solla Vázquez</i></a></label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h2>My emails:</h2>
+                <div class="content_area">
                     <ul class="contact">
                         <li class="contact">
                             <img src="assets/gmail.png" alt="" class="contact_image">
@@ -80,93 +169,31 @@
                     </ul>
                 </div>
             </div>
+        </div>
 
-            <div id="cool_things" class="content_center">
-                <h2>Cool things that I've done:</h2>
-                    <ul>
-                        <li>An Android word-game based on Wordle: <a
-                                href="https://play.google.com/store/apps/details?id=com.joa.encasillado" target="_blank"><b>Encasillado</b></a>.</li>
-                        <li>A Twitter bot for my game Encasillado: <a
-                                href="https://twitter.com/encasillado_bot" target="_blank"><b>@encasillado_bot</b></a>.</li>
-                        <p><b>...</b></p>
-                        <li><i>Currently working on my Graduation Thesis: another Android app.</i></li>
-                    </ul>
+        <div class="body_row" style="margin-top: 0">
+            <div id="widget_small"  class="content_right_small">
+                <h2>A random music album:</h2>
+                <iframe id="spotify_small" style="border-radius:12px"
+                        src=""
+                        width="100%" height="100" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
             </div>
-
-            <div id="widget_big" class="content_right">
-                <iframe class="spotify" style="border-radius:12px"
-                        src="https://open.spotify.com/embed/playlist/0j9V9rO0g86C2NlxF01HOP?utm_source=generator"
-                        frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </div>
-
         </div>
 
-        <div id="contact_small" class="content_left_small">
-            <h2>You can find me on:</h2>
-            <ul class="contact">
-                <li class="contact">
-                    <img src="assets/twitter.png" alt="" class="contact_image">
-                    <div class="contact_text">
-                        <label>&emsp;<b>Twitter:</b> <a
-                                href="https://twitter.com/joaquinsolla" target="_blank"><i>@joaquinsolla</i></a></label>
-                    </div>
-                </li>
-                <li class="contact">
-                    <img src="assets/instagram.png" alt="" class="contact_image">
-                    <div class="contact_text">
-                        <label>&emsp;<b>Instagram:</b> <a
-                                href="https://instagram.com/joaquin.solla" target="_blank"><i>@joaquin.solla</i></a></label>
-                    </div>
-                </li>
-                <li class="contact">
-                    <img src="assets/github.png" alt="" class="contact_image">
-                    <div class="contact_text">
-                        <label>&emsp;<b>GitHub:</b> <a
-                                href="https://github.com/joaquinsolla" target="_blank"><i>joaquinsolla</i></a></label>
-                    </div>
-                </li>
-                <li class="contact">
-                    <img src="assets/linkedin.png" alt="" class="contact_image">
-                    <div class="contact_text">
-                        <label>&emsp;<b>LinkedIn:</b> <a
-                                href="https://www.linkedin.com/in/joaquinsolla" target="_blank"><i>Joaquín Solla Vázquez</i></a></label>
-                    </div>
-                </li>
-            </ul>
-            <h2>My emails:</h2>
-            <ul class="contact">
-                <li class="contact">
-                    <img src="assets/gmail.png" alt="" class="contact_image">
-                    <div class="contact_text">
-                        <label>&emsp;
-                            <a href="mailto:joaquinsollavazquez@gmail.com" target="_blank"><i>joaquinsollavazquez@gmail.com</i></a></label>
-                    </div>
-                </li>
-                <li class="contact">
-                    <img src="assets/udc.png" alt="" class="contact_image">
-                    <div class="contact_text">
-                        <label>&emsp;
-                            <a href="mailto:joaquin.solla@udc.es" target="_blank"><i>joaquin.solla@udc.es</i></a></label>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div id="widget_small"  class="content_right_small">
-            <h2>Some music:</h2>
-            <iframe style="border-radius:12px;"
-                    src="https://open.spotify.com/embed/playlist/0j9V9rO0g86C2NlxF01HOP?utm_source=generator" width="90%"
-                    height="80" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </div>
     </article>
 
     <div id="footer">
         <footer>
-            <hr>
-            <p class="footer_big">THERE'S NOTHING MORE PRECIOUS THAN TIME&nbsp;&nbsp;-&nbsp;&nbsp;Virgil Abloh</p>
-            <p class="footer_small">THERE'S NOTHING MORE PRECIOUS THAN TIME<br/>Virgil Abloh</p>
+
+            <ul class="footer">
+                <li class="footer">
+                    <p class="footer_big">THERE'S NOTHING MORE PRECIOUS THAN TIME&nbsp;&nbsp;-&nbsp;&nbsp;Virgil Abloh</p>
+                    <p class="footer_small">THERE'S NOTHING MORE PRECIOUS THAN TIME<br/>Virgil Abloh</p>
+                </li>
+            </ul>
+
         </footer>
     </div>
 

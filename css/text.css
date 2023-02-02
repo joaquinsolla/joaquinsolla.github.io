@@ -2,6 +2,7 @@ h1{
     font-size: 50px;
     margin-top: 50px;
     text-align: center;
+    color: #fd3e2b;
 }
 
 hr{
@@ -22,18 +23,18 @@ ul.contact {
 
 li{
     text-align: left;
-    margin-bottom: 7px;
 }
 
 li.contact{
-    margin-bottom: 17px;
+    margin-top: 12px;
+    margin-bottom: 12px;
     user-select: text;
     display: flex;
 
 }
 
 a:link, a:visited{
-    color: black;
+    color: white;
 }
 
 p{
@@ -42,11 +43,7 @@ p{
 
 .footer_small{display: none;}
 
-@media (max-width: 1300px) {
-
-    h1{
-        margin-top: 20px;
-    }
+@media (max-width: 1620px) {
 
     .footer_big{display: none}
 

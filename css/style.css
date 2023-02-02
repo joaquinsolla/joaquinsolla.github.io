@@ -4,11 +4,14 @@
 @import "text.css";
 @import "others.css";
 
-body {font-family: Helvetica, Arial, Verdana, sans-serif;}
+body {
+    color: white;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
 
-@media (max-width: 1300px) {
+@media (max-width: 1620px) {
 
-    h1{font-size: 35px;}
+    h1{font-size: 40px;}
 
     h2{font-size: 25px;}
 

@@ -13,11 +13,7 @@
     width: 80%;
 }
 
-@media (max-width: 1300px) {
-
-    .logo{
-        height: 30px;
-    }
+@media (max-width: 1620px) {
 
     .spotify{
         height: 80%;
