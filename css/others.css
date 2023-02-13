@@ -13,6 +13,11 @@
     width: 80%;
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 @media (max-width: 1620px) {
 
     .spotify{
