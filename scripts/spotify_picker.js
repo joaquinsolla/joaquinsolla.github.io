@@ -9,6 +9,7 @@ const albums = [
     "https://open.spotify.com/embed/album/6Q2rUMVAKj1DaDh3xB0IEU?utm_source=generator&theme=0",
     "https://open.spotify.com/embed/album/1atjqOZTCdrjxjMyCPZc2g?utm_source=generator&theme=0",
     "https://open.spotify.com/embed/album/1KrTC1K1M7kMAMDWlH1coX?utm_source=generator&theme=0",
+    "https://open.spotify.com/embed/album/5vP0fNictdWyU48o83Q7ob?utm_source=generator&theme=0"
 ]
 
 function randomIntFromInterval(max) { // min and max included

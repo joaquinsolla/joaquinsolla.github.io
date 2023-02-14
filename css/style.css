@@ -3,6 +3,7 @@
 @import "footer.css";
 @import "text.css";
 @import "others.css";
+@import "timeline.css";
 
 body {
     color: white;
