@@ -2,8 +2,10 @@
 header{ min-height:0; }
 
 header {
+    /*
     overflow: hidden;
     background-color: white;
     color: black;
     user-select: none;
+    */
 }
