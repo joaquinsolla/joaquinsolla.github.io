@@ -61,7 +61,7 @@ div .contact_text{
 }
 
 .content_area{
-    background: #101010;
+    background-image: linear-gradient(to bottom, #101010, #232323);
     border-radius: 12px;
     padding: 10px;
 }
@@ -101,7 +101,7 @@ div .contact_text{
     }
 
     .content_area{
-        background: #282828;
+        background-image: linear-gradient(to bottom, #212121, #3b3b3b);
     }
 
 }
