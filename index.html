@@ -13,12 +13,13 @@
         Joaquín Solla Vázquez, personal website, Encasillado, app, apps, Buchabade, Ponte Caldelas, Pontevedra,
         Engineering, ingeniero, ingeniería, programador">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/spotify_picker.js"></script>
+    <!--<script src="scripts/spotify_picker.js"></script>-->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
 <body onload="loadRandomAlbum()">
-    <div id="header">
-    </div>
+
+    <div id="header"></div>
 
     <article>
         <header><h1 style="animation: fadein 0.75s;">Hi! I'm Joaquín Solla</h1></header>
@@ -139,11 +140,15 @@
             <div id="widget_big" class="content_right">
                 <div style="padding-left: 15%; padding-right: 15%">
                     <h2>&nbsp;</h2>
-                    <iframe id="spotify_big" style="border-radius:12px"
+
+                    <a class="twitter-timeline" data-width="100%" data-height="360" data-theme="dark"
+                       href="https://twitter.com/joaquinsolla?ref_src=twsrc%5Etfw">Loading...</a>
+
+                    <!--<iframe id="spotify_big" style="border-radius:12px"
                             src=""
                             width="100%" height="355" frameBorder="0" allowfullscreen=""
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
+                            loading="lazy"></iframe>-->
                 </div>
             </div>
 
@@ -208,12 +213,20 @@
 
         <div class="body_row" style="margin-top: 0; animation: fadein 0.75s;">
             <div id="widget_small"  class="content_right_small">
-                <h2>A random music album:</h2>
-                <iframe id="spotify_small" style="border-radius:12px"
+                <!--<h2>A random music album:</h2>-->
+                <h2>Follow me on Twitter:</h2>
+
+                <!--<a href="https://twitter.com/joaquinsolla?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                   data-size="large" data-show-count="false">Follow @joaquinsolla</a>-->
+
+                <a class="twitter-timeline" data-width="100%" data-height="400" data-theme="dark"
+                   href="https://twitter.com/joaquinsolla?ref_src=twsrc%5Etfw">Loading...</a>
+
+                <!--<iframe id="spotify_small" style="border-radius:12px"
                         src=""
                         width="100%" height="100" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
+                        loading="lazy"></iframe>-->
             </div>
         </div>
 
