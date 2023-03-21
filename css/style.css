@@ -1,5 +1,6 @@
-@import "body.css";
+@import "variable.css";
 @import "timeline.css";
+@import "carousel.css";
 
 @font-face {
     font-family: 'F1 Regular';
@@ -16,17 +17,51 @@
     to   { opacity: 1; }
 }
 
-body {
-    color: black;
-    font-family: 'F1 Regular', sans-serif;
-}
-
-h1, h2, h3 {
+h1, h2 {
     font-family: 'F1 Bold', sans-serif;
 }
 
+body {
+    font-family: 'F1 Regular', sans-serif;
+    min-height: 100vh;
+    margin:0;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    background-color: #14110f;
+    user-select: none;
+}
 
+.view {
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
 
+#intro{
+    background-image: url('../assets/intro_background.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-color: #14110f;
+    color: white;
+}
+
+#timeline{
+    background-color: #34312D;
+    color: white;
+}
+
+#hobbies{
+    background-color: #7E7F83;
+    color: white;
+}
+
+#socials{
+    background-color: #F3F3F4;
+    color: black;
+}
 
 /* Estilos para pantallas grandes */
 @media screen and (min-width: 1200px) {

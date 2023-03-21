@@ -1,139 +1,109 @@
-* {
-    box-sizing: border-box;
+body {
+  font-size: 1vw;
+  line-height: 1.75;
 }
 
-.timeline-header{
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: #fd3e2b;
+#timeline {
+  display: flex;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-    position: relative;
-    margin: 0 auto;
+#timeline:hover .tl-item {
+  width: 23.3333%;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: 0;
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+  transition: width 0.5s ease;
 }
 
-/* Container around content */
-.timeline-container {
-    padding: 10px 32px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+.tl-item:before, .tl-item:after {
+  transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* The circles on the timeline */
-.timeline-container::after {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: -10px;
-    background-color: white;
-    border: 1px solid white;
-    top: 24px;
-    border-radius: 50%;
-    z-index: 1;
+.tl-item:before {
+  background: linear-gradient(to bottom, transparent 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Place the container to the left */
-.left {
-    left: 0;
+.tl-item:hover {
+  width: 30% !important;
 }
 
-/* Place the container to the right */
-.right {
-    left: 50%;
+.tl-item:hover:after {
+  opacity: 0;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 22px;
-    border: medium solid #282828;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #282828;
+.tl-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
 }
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 22px;
-    border: medium solid #282828;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #282828 transparent transparent;
+.tl-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
 }
 
-/* Fix the circle for containers on the right side */
-.right::after {
-    left: -7px;
+.tl-item:hover .tl-bg {
+  filter: grayscale(0);
 }
 
-/* The actual content */
-.timeline-content {
-    padding: 10px 15px 10px 15px;
-    background-color: #282828;
-    position: relative;
-    border-radius: 12px;
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
 }
 
-@media screen and (max-width: 1620px) {
-    /* Place the timelime to the left */
-    .timeline::after {
-        left: 31px;
-    }
-
-    /* Full-width containers */
-    .timeline-container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .timeline-container::before {
-        left: 60px;
-        border: medium solid #101010;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent #101010 transparent transparent;
-    }
-
-    /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-        left: 24px;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0;
-    }
-
-    /* The actual content */
-    .timeline-content {
-        background-color: #101010;
-    }
-
+.tl-content h1 {
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.3vw;
+  font-weight: normal;
 }
-/** #101010 */
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.tl-year p {
+  font-size: 1.728vw;
+  line-height: 0;
+}
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}

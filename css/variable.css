@@ -1,0 +1,54 @@
+body {
+    font-size: 1vw;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+h2{
+    font-size: 1.5vw;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid;
+    margin: 0 5vw;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1vw;
+    height: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-angle-double-up {
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.socials-container{
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+.socials-element {
+    margin-right: 1.5vw;
+}
