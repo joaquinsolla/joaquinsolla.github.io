@@ -12,11 +12,6 @@
     src: url('../fonts/Formula1-Bold.ttf');
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 h1, h2 {
     font-family: 'F1 Bold', sans-serif;
 }
@@ -27,6 +22,7 @@ body {
     margin:0;
     text-align: center;
     font-weight: normal;
+    line-height: 1.75;
     color: white;
     background-color: #14110f;
     user-select: none;
@@ -53,8 +49,8 @@ body {
     color: white;
 }
 
-#hobbies{
-    background-color: #7E7F83;
+#about_me{
+    background-color: #14110f;
     color: white;
 }
 
@@ -63,17 +59,23 @@ body {
     color: black;
 }
 
-/* Estilos para pantallas grandes */
-@media screen and (min-width: 1200px) {
-    /* Aquí van los estilos para pantallas grandes */
+.fa-angle-double-up {
+    animation: moveUpDown 3s ease-in-out infinite;
 }
 
-/* Estilos para pantallas medianas */
-@media screen and (min-width: 600px) and (max-width: 1199px) {
-    /* Aquí van los estilos para pantallas medianas */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
-/* Estilos para pantallas pequeñas */
-@media screen and (max-width: 599px) {
-    /* Aquí van los estilos para pantallas pequeñas */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
