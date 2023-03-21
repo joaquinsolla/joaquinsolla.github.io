@@ -87,3 +87,26 @@ hr {
 .scroll-arrow {
     font-size: 1.75rem;
 }
+
+/* Style for small screens */
+@media screen and (max-width: 799px) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    .socials-container{
+        font-size: 2em;
+    }
+}
