@@ -13,237 +13,122 @@
         Joaquín Solla Vázquez, personal website, Encasillado, app, apps, Buchabade, Ponte Caldelas, Pontevedra,
         Engineering, ingeniero, ingeniería, programador">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<script src="scripts/spotify_picker.js"></script>-->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<!--<body onload="loadRandomAlbum()">-->
 <body>
 
-    <div id="header"></div>
-
     <article>
-        <header><h1 style="animation: fadein 0.75s;">Hi! I'm Joaquín Solla</h1></header>
+        <div id="intro" class="view" style="background: #00352F; color: white">
+            <div style="width: 100%">
+                <header><h1 style="animation: fadein 0.75s;">Hi! I'm Joaquín Solla</h1></header>
 
-        <div id="intro" class="body_center" style="animation: fadein 0.75s;">
-            <p>Welcome to my personal website. I am a Software Engineering student at the
-                <a href="https://www.udc.es/" target="_blank">A Coruña University (UDC)</a>.<br>
-                On my free time I enjoy developing my own apps, programs and websites.<br></p>
+                <div style="text-align: center; animation: fadein 0.75s;">
+                    <p>Welcome to my personal website. I am a Software Engineering student at the
+                        <a href="https://www.udc.es/" style="color: white" target="_blank">A Coruña University (UDC)</a>.<br>
+                        On my free time I enjoy developing my own apps, programs and websites.<br></p>
+                </div>
+            </div>
         </div>
 
-        <div class="body_row" style="animation: fadein 0.75s;">
+        <div id="timeline" class="view" style="background: #00594F; color: white">
+            <div style="width: 100%">
 
-            <div id="contact_big" class="content_left">
-                <div style="padding-left: 15%; padding-right: 15%">
-                    <h2>You can find me on:</h2>
+                <div id="some_things" class="content_center">
+                    <h2>Some things I've done:</h2>
                     <div class="content_area">
-                        <ul class="contact">
-                            <li class="contact">
-                                <img src="assets/twitter.png" alt="Twitter" class="contact_image">
-                                <div class="contact_text">
-                                    <label>&emsp;<b>Twitter:</b> <a
-                                            href="https://twitter.com/joaquinsolla" target="_blank"><i>@joaquinsolla</i></a></label>
+                        <div class="timeline">
+                            <div class="timeline-container left" style="animation: fadein 1s;">
+                                <div class="timeline-content">
+                                    <h2 class="timeline-header">2019</h2>
+                                    <label>Started Software Engineering at College.</label>
                                 </div>
-                            </li>
-                            <li class="contact">
-                                <img src="assets/instagram.png" alt="Instagram" class="contact_image">
-                                <div class="contact_text">
-                                    <label>&emsp;<b>Instagram:</b> <a
-                                            href="https://instagram.com/joaquin.solla" target="_blank"><i>@joaquin.solla</i></a></label>
+                            </div>
+                            <div class="timeline-container right" style="animation: fadein 1.33s;">
+                                <div class="timeline-content">
+                                    <h2 class="timeline-header">2022</h2>
+                                    <label>Published my first Android app on the PlayStore, a word-game based on Wordle: <a
+                                            href="https://play.google.com/store/apps/details?id=com.joa.encasillado" target="_blank"><b>Encasillado</b></a>.</label>
                                 </div>
-                            </li>
-                            <li class="contact">
-                                <img src="assets/github.png" alt="GitHub" class="contact_image">
-                                <div class="contact_text">
-                                    <label>&emsp;<b>GitHub:</b> <a
-                                            href="https://github.com/joaquinsolla" target="_blank"><i>joaquinsolla</i></a></label>
+                            </div>
+                            <div class="timeline-container left" style="animation: fadein 1.66s;">
+                                <div class="timeline-content">
+                                    <h2 class="timeline-header">2022</h2>
+                                    <label>Automatized a Twitter bot for the game Encasillado (currently disabled): <a
+                                            href="https://twitter.com/encasillado_bot" target="_blank"><b>@encasillado_bot</b></a>.</label>
                                 </div>
-                            </li>
-                            <li class="contact">
-                                <img src="assets/linkedin.png" alt="LinkedIn" class="contact_image">
-                                <div class="contact_text">
-                                    <label>&emsp;<b>LinkedIn:</b> <a
-                                            href="https://www.linkedin.com/in/joaquinsolla" target="_blank"><i>Joaquín Solla Vázquez</i></a></label>
+                            </div>
+                            <div class="timeline-container right" style="animation: fadein 2s;">
+                                <div class="timeline-content">
+                                    <h2 class="timeline-header">2023</h2>
+                                    <label>Developed and published my personal website: <a
+                                            href="https://joaquinsolla.com" target="_blank"><b>joaquinsolla.com</b></a>.</label>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <h2>My emails:</h2>
-                    <div class="content_area">
-                        <ul class="contact">
-                        <li class="contact">
-                            <img src="assets/gmail.png" alt="Gmail" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;
-                                    <a href="mailto:joaquinsollavazquez@gmail.com" target="_blank"><i>joaquinsollavazquez@gmail.com</i></a></label>
                             </div>
-                        </li>
-                        <li class="contact">
-                            <img src="assets/udc.png" alt="Outlook" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;
-                                    <a href="mailto:joaquin.solla@udc.es" target="_blank"><i>joaquin.solla@udc.es</i></a></label>
+                            <div class="timeline-container left" style="animation: fadein 2.33s;">
+                                <div class="timeline-content">
+                                    <h2 class="timeline-header">2023</h2>
+                                    <label>Developed and published my village's website: <a
+                                            href="https://buchabade.com" target="_blank"><b>buchabade.com</b></a>.</label>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="some_things" class="content_center">
-                <h2>Some things I've done:</h2>
-                <div class="content_area">
-                    <div class="timeline">
-                        <div class="timeline-container left" style="animation: fadein 1s;">
-                            <div class="timeline-content">
-                                <h2 class="timeline-header">2019</h2>
-                                <label>Started Software Engineering at College.</label>
-                            </div>
-                        </div>
-                        <div class="timeline-container right" style="animation: fadein 1.33s;">
-                            <div class="timeline-content">
-                                <h2 class="timeline-header">2022</h2>
-                                <label>Published my first Android app on the PlayStore, a word-game based on Wordle: <a
-                                        href="https://play.google.com/store/apps/details?id=com.joa.encasillado" target="_blank"><b>Encasillado</b></a>.</label>
-                            </div>
-                        </div>
-                        <div class="timeline-container left" style="animation: fadein 1.66s;">
-                            <div class="timeline-content">
-                                <h2 class="timeline-header">2022</h2>
-                                <label>Automatized a Twitter bot for the game Encasillado (currently disabled): <a
-                                        href="https://twitter.com/encasillado_bot" target="_blank"><b>@encasillado_bot</b></a>.</label>
-                            </div>
-                        </div>
-                        <div class="timeline-container right" style="animation: fadein 2s;">
-                            <div class="timeline-content">
-                                <h2 class="timeline-header">2023</h2>
-                                <label>Developed and published my personal website: <a
-                                        href="https://joaquinsolla.com" target="_blank"><b>joaquinsolla.com</b></a>.</label>
-                            </div>
-                        </div>
-                        <div class="timeline-container left" style="animation: fadein 2.33s;">
-                            <div class="timeline-content">
-                                <h2 class="timeline-header">2023</h2>
-                                <label>Developed and published my village's website: <a
-                                        href="https://buchabade.com" target="_blank"><b>buchabade.com</b></a>.</label>
-                            </div>
-                        </div>
-                        <div class="timeline-container right" style="animation: fadein 2.66s;">
-                            <div class="timeline-content">
-                                <h2 class="timeline-header">Currently</h2>
-                                <label><i>Developing my Graduation Thesis: An Android app.</i></label>
+                            <div class="timeline-container right" style="animation: fadein 2.66s;">
+                                <div class="timeline-content">
+                                    <h2 class="timeline-header">Currently</h2>
+                                    <label><i>Developing my Graduation Thesis: An Android app.</i></label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="widget_big" class="content_right">
-                <div style="padding-left: 15%; padding-right: 15%">
-                    <h2>&nbsp;</h2>
-
-                    <a class="twitter-timeline" data-width="100%" data-height="360" data-theme="dark"
-                       href="https://twitter.com/joaquinsolla?ref_src=twsrc%5Etfw">Loading...</a>
-
-                    <!--<iframe id="spotify_big" style="border-radius:12px"
-                            src=""
-                            width="100%" height="355" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>-->
-                </div>
-            </div>
-
-        </div>
-
-        <div class="body_row" style="margin-top: 0; animation: fadein 0.75s;">
-            <div id="contact_small" class="content_left_small">
-                <h2>You can find me on:</h2>
-                <div class="content_area">
-                    <ul class="contact">
-                        <li class="contact">
-                            <img src="assets/twitter.png" alt="Twitter" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;<b>Twitter:</b> <a
-                                        href="https://twitter.com/joaquinsolla" target="_blank"><i>@joaquinsolla</i></a></label>
-                            </div>
-                        </li>
-                        <li class="contact">
-                            <img src="assets/instagram.png" alt="Instagram" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;<b>Instagram:</b> <a
-                                        href="https://instagram.com/joaquin.solla" target="_blank"><i>@joaquin.solla</i></a></label>
-                            </div>
-                        </li>
-                        <li class="contact">
-                            <img src="assets/github.png" alt="GitHub" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;<b>GitHub:</b> <a
-                                        href="https://github.com/joaquinsolla" target="_blank"><i>joaquinsolla</i></a></label>
-                            </div>
-                        </li>
-                        <li class="contact">
-                            <img src="assets/linkedin.png" alt="LinkedIn" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;<b>LinkedIn:</b> <a
-                                        href="https://www.linkedin.com/in/joaquinsolla" target="_blank"><i>Joaquín Solla Vázquez</i></a></label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <h2>My emails:</h2>
-                <div class="content_area">
-                    <ul class="contact">
-                        <li class="contact">
-                            <img src="assets/gmail.png" alt="Gmail" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;
-                                    <a href="mailto:joaquinsollavazquez@gmail.com" target="_blank"><i>joaquinsollavazquez@gmail.com</i></a></label>
-                            </div>
-                        </li>
-                        <li class="contact">
-                            <img src="assets/udc.png" alt="UDC" class="contact_image">
-                            <div class="contact_text">
-                                <label>&emsp;
-                                    <a href="mailto:joaquin.solla@udc.es" target="_blank"><i>joaquin.solla@udc.es</i></a></label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
 
-        <div class="body_row" style="margin-top: 0; animation: fadein 0.75s;">
-            <div id="widget_small"  class="content_right_small">
-                <!--<h2>A random music album:</h2>-->
-                <h2>Follow me on Twitter:</h2>
+        <div id="hobbies" class="view" style="background: #CEDC00; color: black">
+            <div style="width: 100%">
 
-                <!--<a href="https://twitter.com/joaquinsolla?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                   data-size="large" data-show-count="false">Follow @joaquinsolla</a>-->
+            </div>
+        </div>
 
-                <a class="twitter-timeline" data-width="100%" data-height="400" data-theme="dark"
-                   href="https://twitter.com/joaquinsolla?ref_src=twsrc%5Etfw">Loading...</a>
-
-                <!--<iframe id="spotify_small" style="border-radius:12px"
-                        src=""
-                        width="100%" height="100" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>-->
+        <div id="socials" class="view" style="background: #FFFFFF; color: black">
+            <div style="width: 100%; user-select: text">
+                <h1>Contact me</h1>
+                <hr>
+                <div class="socials-container">
+                    <h2>My emails</h2>
+                    <label>
+                        <a href="mailto:joaquinsollavazquez@gmail.com" style="color: black" target="_blank">
+                            <i class="fa fa-envelope" style="font-size: 1vw"></i>&nbsp;joaquinsollavazquez@gmail.com
+                        </a>
+                        <br>
+                        <a href="mailto:joaquin.solla@udc.es" style="color: black" target="_blank">
+                            <i class="fa fa-envelope" style="font-size: 1vw"></i>&nbsp;joaquin.solla@udc.es
+                        </a>
+                    </label>
+                </div>
+                <hr>
+                <div class="socials-container">
+                    <h2>My socials</h2>
+                    <a href="https://twitter.com/joaquinsolla" target="_blank" style="color: black; text-decoration: none">
+                        <i class="socials-element fa fa-twitter" style="font-size: 3vw"></i>
+                    </a>
+                    <a href="https://instagram.com/joaquin.solla" target="_blank" style="color: black; text-decoration: none">
+                        <i class="socials-element fa fa-instagram" style="font-size: 3vw"></i>
+                    </a>
+                    <a href="https://github.com/joaquinsolla" target="_blank" style="color: black; text-decoration: none">
+                        <i class="socials-element fa fa-github" style="font-size: 3vw"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joaquinsolla" target="_blank" style="color: black; text-decoration: none">
+                        <i class="socials-element fa fa-linkedin" style="font-size: 3vw"></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/joakopeke11" target="_blank" style="color: black; text-decoration: none">
+                        <i class="socials-element fa fa-spotify" style="font-size: 3vw"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
     </article>
-
-    <div id="footer">
-        <footer>
-
-            <ul class="footer">
-                <li class="footer">
-                    <p class="footer_big">THERE'S NOTHING MORE PRECIOUS THAN TIME&nbsp;&nbsp;-&nbsp;&nbsp;Virgil Abloh</p>
-                    <p class="footer_small">THERE'S NOTHING MORE PRECIOUS THAN TIME<br/>Virgil Abloh</p>
-                </li>
-            </ul>
-
-        </footer>
-    </div>
 
 </body>

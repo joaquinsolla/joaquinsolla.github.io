@@ -1,21 +1,44 @@
-@import "header.css";
 @import "body.css";
-@import "footer.css";
-@import "text.css";
-@import "others.css";
 @import "timeline.css";
 
-body {
-    color: white;
-    font-family: Helvetica, Arial, Verdana, sans-serif;
+@font-face {
+    font-family: 'F1 Regular';
+    src: url('../fonts/Formula1-Regular.ttf');
 }
 
-@media (max-width: 1620px) {
+@font-face {
+    font-family: 'F1 Bold';
+    src: url('../fonts/Formula1-Bold.ttf');
+}
 
-    h1{font-size: 40px;}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-    h2{font-size: 25px;}
+body {
+    color: black;
+    font-family: 'F1 Regular', sans-serif;
+}
 
-    body{font-size: 15px;}
+h1, h2, h3 {
+    font-family: 'F1 Bold', sans-serif;
+}
 
+
+
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1200px) {
+    /* Aquí van los estilos para pantallas grandes */
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    /* Aquí van los estilos para pantallas medianas */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 599px) {
+    /* Aquí van los estilos para pantallas pequeñas */
 }
