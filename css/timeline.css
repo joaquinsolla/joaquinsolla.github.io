@@ -139,6 +139,11 @@
     width: 100vw;
   }
 
+  #timeline:active .tl-item {
+    height: 23.3333vh;
+    width: 100vw;
+  }
+
   .tl-item {
     height: 25vh;
     width: 100vw;
@@ -155,6 +160,11 @@
     width: 100vw !important;
   }
 
+  .tl-item:active {
+    height: 50vh !important;
+    width: 100vw !important;
+  }
+
   .tl-item:before {
     background: linear-gradient(to bottom, transparent 0%, black 45%);
   }
@@ -163,7 +173,15 @@
     transform: translate3d(0, 0, 0) translateX(0);
   }
 
+  .tl-item:active:before {
+    transform: translate3d(0, 0, 0) translateX(0);
+  }
+
   .tl-item:hover .tl-content {
+    transform: translateX(0);
+  }
+
+  .tl-item:active .tl-content {
     transform: translateX(0);
   }
 
