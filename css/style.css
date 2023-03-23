@@ -36,6 +36,16 @@ body {
     justify-content: center;
 }
 
+.warning {
+    min-height: 5vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+}
+
 #intro{
     background-image: url('../assets/intro_background.jpg');
     background-position: top center;
