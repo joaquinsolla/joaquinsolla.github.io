@@ -1,5 +1,9 @@
 /* TEXT PALETTE:  WHITE, #a1a1a1, #858585*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     min-height: 100vh;
