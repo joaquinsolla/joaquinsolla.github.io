@@ -68,7 +68,12 @@
 
             const mainRoute = "../assets/photography/wec/6-hours-portimao-2023/";
 
-            const images = [
+            let images = [
+                mainRoute + "DSC_2460.webp",
+                mainRoute + "DSC_2994.webp",
+                mainRoute + "DSC_3003.webp",
+                mainRoute + "DSC_4123.webp",
+                mainRoute + "DSC_4204.webp",
                 mainRoute + "DSC_3024.webp",
                 mainRoute + "DSC_3025.webp",
                 mainRoute + "DSC_4184.webp",
@@ -142,6 +147,9 @@
                 mainRoute + "DSC_3344.webp",
                 mainRoute + "DSC_3342.webp",
             ];
+
+            // Order from newer to older on shot date
+            // images = images.sort().reverse();
 
             const galleryColumn1 = document.getElementById("gallery-column-1");
             const galleryColumn2 = document.getElementById("gallery-column-2");
