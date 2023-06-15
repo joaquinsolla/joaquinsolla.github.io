@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JOAQUIN SOLLA - PHOTOGRAPHY - GALIEXPO 2023</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Joaquín Solla Vázquez">
+  <meta name="description" content="Gallery: Galiexpo 2023. The photography archives of a car enthusiast.">
+  <meta name="keywords" content="Joaquin Solla, Joaquin Solla Vazquez, software engineer, Galicia, Spain, personal website,
+    HTML, CSS, JavaScript, photography, photo, motorsport, rally, wec, f1, porsche, motor, car photography, car, expo, galiexpo, vigo, 2023">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="icon" href="/assets/favicon-light.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/assets/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="../scripts/disableContextMenu.js"></script>
+</head>
+
+<body class="body-index">
+
+<div class="header-container">
+  <div id="header" class="header">
+    <p class="header-title">JOAQUIN SOLLA</p>
+    <p class="header-subtitle">SOFTWARE ENGINEER</p>
+    <hr class="header-hr">
+    <div class="header-link-row">
+      <a class="header-link" href="https://twitter.com/joaquinsolla" target="_blank">TWITTER</a>
+
+      <a class="header-link" href="../index.html">SOFTWARE TRAJECTORY</a>
+    </div>
+    <div class="header-link-row">
+      <a class="header-link" href="https://instagram.com/joaquin.solla" target="_blank">INSTAGRAM</a>
+
+      <a class="header-link" href="../photography.html">PHOTOGRAPHY</a>
+    </div>
+    <div class="header-link-row">
+      <a class="header-link" href="https://github.com/joaquinsolla" target="_blank">GITHUB</a>
+    </div>
+    <div class="header-link-row">
+      <a class="header-link" href="https://www.linkedin.com/in/joaquinsolla" target="_blank">LINKEDIN</a>
+    </div>
+    <div class="header-link-row">
+      <a class="header-link" href="mailto:joaquinsollavazquez@gmail.com" target="_blank">EMAIL</a>
+    </div>
+    <p class="header-credits">&copy; JOAQUÍN SOLLA VÁZQUEZ 2023</p>
+  </div>
+</div>
+
+<div class="index-content-container">
+  <div class="index-content">
+
+    <p class="index-content-subtitle"><br>GALIEXPO 2023<br><br></p>
+
+    <div id="gallery-column-1" class="gallery-column"></div>
+    <div id="gallery-column-2" class="gallery-column"></div>
+    <div id="modal" class="modal">
+      <span class="close" onclick="document.getElementById('modal').style.display='none'">&#10005;</span>
+      <img class="modal-content" id="modalImage" alt="" src="" loading="eager">
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      function isEven(num) {
+        return num % 2 === 0;
+      }
+
+      const mainRoute = "../assets/photography/expos/galiexpo-2023/";
+
+      let images = [
+        mainRoute + "DSC_6421_6415.webp",
+        mainRoute + "DSC_6412.webp",
+        mainRoute + "DSC_6417_edit.webp",
+        mainRoute + "DSC_6420.webp",
+        mainRoute + "DSC_6421_edit.webp",
+        mainRoute + "DSC_6415.webp",
+      ];
+
+      // Order from newer to older on shot date
+      //images = images.sort().reverse();
+
+      const galleryColumn1 = document.getElementById("gallery-column-1");
+      const galleryColumn2 = document.getElementById("gallery-column-2");
+
+      for (let i = 0; i < images.length; i++) {
+        let img = document.createElement("img");
+        img.dataset.src = images[i];
+        img.className = "index-content-gallery-image";
+        img.alt = "";
+        img.loading = "lazy";
+
+        img.onclick = (function(index) {
+          return function() {
+            let modal = document.getElementById("modal");
+            let modalImg = document.getElementById("modalImage");
+            let captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = images[index];
+            captionText.innerHTML = img.alt;
+          };
+        })(i);
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.removeAttribute("data-src");
+              observer.unobserve(lazyImage);
+            }
+          });
+        });
+
+        if (isEven(i)) {
+          galleryColumn1.appendChild(img);
+          observer.observe(img);
+        } else {
+          galleryColumn2.appendChild(img);
+          observer.observe(img);
+        }
+      }
+
+      const modal = document.getElementById("modal");
+      let span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+        modal.style.display = "none";
+      };
+
+    </script>
+
+    <p class="footer">"THERE'S NOTHING MORE PRECIOUS THAN TIME" - Virgil Abloh</p>
+
+  </div>
+
+</div>
+
+</body>
