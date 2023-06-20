@@ -231,6 +231,10 @@ body {
         vertical-align: top;
     }
 
+    #my-instagram-row{
+        margin-top: 25px;
+    }
+
 }
 
 /* SMARTPHONES */
@@ -291,6 +295,10 @@ body {
 
         display: block;
         vertical-align: top;
+    }
+
+    #my-instagram-row{
+        margin-top: 25px;
     }
 
 }
