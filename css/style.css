@@ -140,6 +140,8 @@ body {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    hyphens: auto;
+    word-break: break-word;
 }
 
 .index-content-subtitle {
