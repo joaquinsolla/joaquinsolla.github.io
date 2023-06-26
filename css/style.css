@@ -79,6 +79,16 @@ body {
     text-transform: uppercase;
 }
 
+.header-subtitle-no-margin {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #858585;
+    margin: 0 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
 .header-hr {
     border: none;
     border-top: 1px solid #858585;
@@ -106,12 +116,19 @@ body {
     color: #a1a1a1;
 }
 
-.text-link {
-    color: white;
+.banner-link {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.6rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 1.5rem;
+    text-transform: uppercase;
 }
 
-.text-link:hover {
-    color: #a1a1a1;
+.banner-link:hover {
+    opacity: 0.8;
 }
 
 .header-credits {
@@ -130,6 +147,10 @@ body {
 
 .margin-bottom{
     margin-bottom: 40px;
+}
+
+.margin-top{
+    margin-top: 40px;
 }
 
 .index-content-title {
@@ -202,6 +223,18 @@ body {
     vertical-align: top;
 }
 
+.photography-banner{
+    margin: 20px 0 20px 0;
+}
+
+.photography-banner-content{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.display-on-big{}
+
 /* TABLETS */
 @media screen and (max-width: 1100px) and (min-width: 851px){
 
@@ -233,8 +266,12 @@ body {
         vertical-align: top;
     }
 
-    #my-instagram-row{
-        margin-top: 25px;
+    .photography-banner-content{
+        justify-content: center;
+    }
+
+    .display-on-big{
+        display: none;
     }
 
 }
@@ -299,8 +336,12 @@ body {
         vertical-align: top;
     }
 
-    #my-instagram-row{
-        margin-top: 25px;
+    .photography-banner-content{
+        justify-content: center;
+    }
+
+    .display-on-big{
+        display: none;
     }
 
 }
