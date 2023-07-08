@@ -12,13 +12,23 @@
     </url>
 
     <url>
+        <loc>https://joaquinsolla.com/photography/sessions/mercedes-cla-220-amg-4matic.html</loc>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://joaquinsolla.com/photography/sessions/seat-ibiza-tsi-cupra.html</loc>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://joaquinsolla.com/photography/expos/galiexpo-2023.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://joaquinsolla.com/photography/rally/subida-a-escusa-2023.html</loc>
-        <changefreq>weekly</changefreq>
+        <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
