@@ -115,10 +115,13 @@ h2{
     min-height: 100vh;
 }
 
+article{
+    padding: 2.5rem 5rem;
+}
+
 #novidades {
     background: black;
     color: white;
-    padding: 2.5rem 5rem;
     min-height: auto;
 }
 
@@ -126,7 +129,6 @@ h2{
     background: white;
     color: black;
     margin: 0;
-    padding: 2.5rem 5rem;
     height: 80vh;
 }
 
@@ -204,7 +206,6 @@ button:hover{
 #article-comunicados-2{
     background: white;
     color: black;
-    padding: 2.5rem 5rem;
     min-height: auto;
 }
 
@@ -267,7 +268,6 @@ button:hover{
 #article-merchandising-2{
     background: white;
     color: black;
-    padding: 2.5rem 5rem;
     min-height: auto;
 }
 
@@ -283,7 +283,7 @@ button:hover{
     box-sizing: border-box;
     border: 1px solid #ddd;
     text-align: center;
-    min-width: 200px; /* Mínimo tamaño de los items */
+    min-width: 150px; /* Mínimo tamaño de los items */
     max-width: calc(25% - 1rem);
     color: black;
 }
@@ -305,6 +305,10 @@ button:hover{
 }
 
 @media (max-width: 900px) {
+
+    article{
+        padding: 2.5rem 2.5rem;
+    }
 
     #updates-button{
         display: none;
