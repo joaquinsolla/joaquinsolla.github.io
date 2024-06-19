@@ -1,100 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="gl">
 <head>
-    <title>JOAQUIN SOLLA - SOFTWARE ENGINEER</title>
+    <title>ESCUDERÍA PONTE CALDELAS</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joaquín Solla Vázquez">
-    <meta name="description" content="The trajectory of a Software Engineer from Galicia, Spain.">
-    <meta name="keywords" content="Joaquin Solla, Joaquin Solla Vazquez, software engineer, Galicia, Spain, software development,
-    Android app, Flutter, Google Firebase, Twitter Bot, Python programming, personal website, HTML, CSS, JavaScript, buchabade,
-    elartedelaruina, el arte de la ruina, Simplex, Simplex organizacion personal">
+    <meta name="description" content="Páxina web oficial da Escudería de rally de Ponte Caldelas. Organizadores da
+    subida a Ponte Caldelas.">
+    <meta name="keywords" content="Ponte Caldelas, escuderia ponte caldelas, subida ponte caldelas, rally, caldelas,
+    concello, pontevedra, galicia, rallie, coches, competicion, carcross">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/assets/icons/software/software_icon-light.ico" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="/assets/icons/software/software_icon-dark.ico" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/assets/icons/icon_black.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/assets/icons/icon_white.ico" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="scripts/disableContextMenu.js"></script>
+    <script type='text/javascript' src='scripts/no_context_menu.js'></script>
+    <script type='text/javascript' src='scripts/navigation.js'></script>
+
+    <!--SLICK CAROUSEL-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/slick.js"></script>
 </head>
 
-<body class="body-index">
+<body>
 
-        <div class="header-container">
-            <div id="header" class="header">
-                <p class="header-title">JOAQUIN SOLLA</p>
-                <p class="header-subtitle">SOFTWARE ENGINEER</p>
-                <hr class="header-hr">
-                <div class="header-link-row">
-                    <a class="header-link" href="https://instagram.com/joaquin.solla" target="_blank">INSTAGRAM</a>
+    <div id="main_nav" class="main_nav">
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('main_nav');
 
-                    <a class="header-link" href="https://github.com/joaquinsolla" target="_blank">GITHUB</a>
-                </div>
-                <div class="header-link-row">
-                    <a class="header-link" href="https://twitter.com/joaquinsolla" target="_blank">TWITTER / X</a>
+            window.addEventListener('scroll', function() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-                    <a class="header-link" href="https://www.linkedin.com/in/joaquinsolla" target="_blank">LINKEDIN</a>
-                </div>
-                <div class="header-link-row">
-                    <a class="header-link" href="https://open.spotify.com/user/joakopeke11" target="_blank">SPOTIFY</a>
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = '-12vh';
+                } else {
+                    // Scrolling up
+                    navbar.style.top = '0';
+                }
 
-                    <a class="header-link" href="mailto:joaquinsollavazquez@gmail.com" target="_blank">EMAIL</a>
-                </div>
-                <p class="header-credits">&copy; JOAQUÍN SOLLA VÁZQUEZ 2023</p>
-            </div>
+                lastScrollTop = scrollTop;
+            });
+        </script>
+        <ul>
+            <li class="nav_to_hide_on_big"><p onclick="showPopUpNav()">MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+            <li class="nav_logo"><a href="index.html"><img src="assets/escuderia.png" alt=""></a></li>
+            <li class="nav_to_hide_on_small" style="cursor: pointer" onclick="scrollToIntro()"><a>NOVIDADES</a></li>
+            <li class="nav_to_hide_on_small"><a href="comunicados.html">COMUNICADOS</a></li>
+            <li class="nav_to_hide_on_small"><a href="merchandising.html">MERCHANDISING</a></li>
+            <li class="nav_to_hide_on_small"><a href="a_escuderia.html">A ESCUDERIA</a></li>
+            <li class="nav_to_hide_on_small"><a href="galeria.html">GALERIA</a></li>
+            <li class="nav_last"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+
+        <div id="pop_up_nav" class="pop_up_nav">
+            <ul>
+                <script>
+                    function closePopUpAndScrollToIntro(){
+                        showPopUpNav()
+                        scrollToIntro()
+                    }
+                </script>
+                <li style="cursor: pointer" onclick="closePopUpAndScrollToIntro()"><a>NOVIDADES</a></li>
+                <li><a href="comunicados.html">COMUNICADOS</a></li>
+                <li><a href="merchandising.html">MERCHANDISING</a></li>
+                <li><a href="a_escuderia.html">A ESCUDERIA</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+            </ul>
         </div>
 
-        <div class="index-content-container">
-            <div id="software-career" class="index-content">
+    </div>
 
-                <div id="2023" class="index-content-section margin-bottom">
-                    <p class="index-content-title">2023</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.joa.simplex" class="index-content-link" target="_blank">
-                        <p class="index-content-subtitle">SIMPLEX: Personal management <i class="fa fa-android"></i> <i class="fa fa-external-link"></i></p>
-                        <p class="index-content-text">My new Android app, focused on personal management. It is my graduation thesis, and it is free and available on Google Play Store.</p>
-                    </a>
-                    <br>
-                    <a href="https://elartedelaruina.com/" class="index-content-link" target="_blank">
-                        <p class="index-content-subtitle">ELARTEDELARUINA.COM <i class="fa fa-globe"></i> <i class="fa fa-external-link"></i></p>
-                        <p class="index-content-text">I developed the website of my friend's Manuel Estévez graduation thesis. A place on the Internet to show his photography project to the world. I highly recommend you to check it out.</p>
-                    </a>
-                    <br>
-                    <a href="https://buchabade.com/" class="index-content-link" target="_blank">
-                        <p class="index-content-subtitle">BUCHABADE.COM <i class="fa fa-globe"></i> <i class="fa fa-external-link"></i></p>
-                        <p class="index-content-text">I worked with the board of the community of my village to develop their website. Nowadays, they use it to post notices and multimedia from the village.</p>
-                    </a>
-                        <br>
-                    <p class="index-content-subtitle">MY PERSONAL WEBSITE</p>
-                    <p class="index-content-text">At the beginning of the year I decided to develop and publish my own website. Coded on HTML, CSS and JavaScript, it is being hosted on GitHub Pages&reg;.</p>
+    <div class="content">
+        <article id="article-index-1">
+            <script>
+                const images = [
+                    'url(assets/index_slick/slick1.webp)',
+                    'url(assets/index_slick/slick2.webp)',
+                ];
+
+                function changeBackground() {
+                    const div = document.getElementById('article-index-1');
+                    let i = 0;
+                    setInterval(() => {
+                        div.style.backgroundImage = images[i];
+                        i = (i + 1) % images.length;
+                    }, 5000);
+                }
+
+                window.onload = () => {
+                    changeBackground();
+                };
+            </script>
+            <script>
+                function scrollToIntro(){
+                    const targetElement = document.querySelector('#novidades');
+                    const targetPosition = targetElement.offsetTop;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+
+                    const duration = 300;
+                    let start = null;
+                    window.requestAnimationFrame(step);
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        const progress = timestamp - start;
+                        window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
+                        if (progress < duration) window.requestAnimationFrame(step);
+                    }
+
+                    // Easing function para una transición suave
+                    function easeInOutQuad(t, b, c, d) {
+                        t /= d/2;
+                        if (t < 1) return c/2*t*t + b;
+                        t--;
+                        return -c/2 * (t*(t-2) - 1) + b;
+                    }
+                }
+            </script>
+            <div style="height: 100%; width: 100%; align-content: end; text-align: center">
+                <div style="height: 80vh; width: 100%; align-content: center; text-align: center">
+                    <img id="article-1-img" src="assets/escuderia.png" alt="" style="height: 40vh">
                 </div>
-
-                <div id="2022" class="index-content-section margin-bottom">
-                    <p class="index-content-title">2022</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.joa.encasillado" class="index-content-link" target="_blank">
-                        <p class="index-content-subtitle">ENCASILLADO <i class="fa fa-android"></i> <i class="fa fa-external-link"></i></p>
-                        <p class="index-content-text">My first Android app on the PlayStore, a word-game based on Wordle: Encasillado.
-                            Fully coded in Flutter and integrated with Google Firebase&reg;.<br>
-                            You can find the source code in my GitHub.
-                        </p>
-                    </a>
-                    <br>
-                    <a href="https://twitter.com/encasillado_bot" class="index-content-link" target="_blank">
-                        <p class="index-content-subtitle">ENCASILLADO BOT FOR TWITTER <i class="fa fa-twitter"></i> <i class="fa fa-external-link"></i></p>
-                        <p class="index-content-text">I also coded in Python an automated Twitter Bot for the game Encasillado (it is currently disabled).</p>
-                    </a>
+                <div id="updates-button" onclick="scrollToIntro()" style="height: 20vh; margin-bottom: 15vh; font-family: 'Kanit', sans-serif; font-style: italic; font-size: 1.2rem; cursor: pointer">
+                    <i class="fa fa-angle-double-down" aria-hidden="true" style="font-size: 1.5rem; animation: bounce 3s infinite"></i>
+                    &nbsp;&nbsp;ÚLTIMAS ACTUALIZACIÓNS&nbsp;&nbsp;
+                    <i class="fa fa-angle-double-down" aria-hidden="true" style="font-size: 1.5rem; animation: bounce 3s infinite"></i>
                 </div>
-
-                <div id="2019" class="index-content-section">
-                    <p class="index-content-title">2019</p>
-                    <p class="index-content-subtitle">STARTING AT COLLEGE - UDC</p>
-                    <p class="index-content-text">On this year I graduated at High-school and started Software Engineering at College in A Coruña.</p>
-                </div>
-
-                <p class="footer" style="margin-top: 75px">"THERE'S NOTHING MORE PRECIOUS THAN TIME" - Virgil Abloh</p>
-
             </div>
-        </div>
+        </article>
+        <article id="novidades">
+            <h1>NOVIDADES</h1>
+            <hr style="margin-bottom: 1rem">
+
+            <div id="novidade-1" class="comunicado">
+                <div class="comunicado-content">
+                    <h2>Lorem Ipsum</h2>
+                    <h5>13/06/2024</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
+                    <p>Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
+                    <div class="buttons-container">
+                        <a href="" target="_blank" style="text-decoration: transparent">
+                            <button>
+                                <i class="fa fa-download"></i>&nbsp;Descargar archivo
+                            </button>
+                        </a>
+                        &nbsp;
+                        <a href="" target="_blank" style="text-decoration: transparent">
+                            <button>
+                                <i class="fa fa-share-alt"></i>&nbsp;Compartir
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="comunicado-content">
+                    <div class="comunicado-content-img">
+                        <a href="assets/doc1.webp" target="_blank">
+                            <img src="assets/doc1.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: 1rem 0">
+
+            <div id="novidade-2" class="comunicado">
+                <div class="comunicado-content">
+                    <h2>Lorem Ipsum</h2>
+                    <h5>10/06/2024</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
+                    <div class="buttons-container">
+                        <a href="" target="_blank" style="text-decoration: transparent">
+                            <button>
+                                <i class="fa fa-download"></i>&nbsp;Descargar archivo
+                            </button>
+                        </a>
+                        &nbsp;
+                        <a href="" target="_blank" style="text-decoration: transparent">
+                            <button>
+                                <i class="fa fa-share-alt"></i>&nbsp;Compartir
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="comunicado-content">
+                    <div class="comunicado-content-img">
+                        <a href="assets/doc2.webp" target="_blank">
+                            <img src="assets/doc2.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <article id="calendario">
+            <h1>CALENDARIO</h1>
+            <hr style="margin-bottom: 1rem">
+            <div class="buttons-container">
+                <a href="" target="_blank" style="text-decoration: transparent">
+                    <button class="button-white">
+                        <i class="fa fa-calendar-plus-o"></i>&nbsp;Suscribirse (URL iCal)
+                    </button>
+                </a>
+                &nbsp;
+                <a href="" target="_blank">
+                    <button class="button-white">
+                        <i class="fa fa-share-alt"></i>&nbsp;Compartir
+                    </button>
+                </a>
+            </div>
+            <br>
+            <iframe src="https://calendar.google.com/calendar/embed?src=288c78bbc712e286e835fe7c8bd69e2924084025ed23dab16586a677fc6b93f3%40group.calendar.google.com&ctz=Europe%2FAmsterdam" style="border: 0" width="100%" height="80%" frameborder="0" scrolling="no"></iframe>
+
+        </article>
+
+    </div>
+
+    <footer>
+        <p>OS NOSOS SOCIOS E PATROCINADORES</p>
+    </footer>
 
 </body>
+</html>
