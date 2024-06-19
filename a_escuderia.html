@@ -34,22 +34,24 @@
     <script>
         let lastScrollTop = 0;
         const navbar = document.getElementById('main_nav');
+        const deadZone = 50;
 
         window.addEventListener('scroll', function() {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollTop > lastScrollTop) {
-                // Scrolling down
-                navbar.style.top = '-12vh';
-            } else {
-                // Scrolling up
-                navbar.style.top = '0';
-            }
+            if (Math.abs(scrollTop - lastScrollTop) > deadZone) {
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = '-12vh';
+                } else {
+                    // Scrolling up
+                    navbar.style.top = '0';
+                }
 
-            lastScrollTop = scrollTop;
+                lastScrollTop = scrollTop;
+            }
         });
-    </script>
-    <ul>
+    </script>    <ul>
         <li class="nav_to_hide_on_big"><p onclick="showPopUpNav()">MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
         <li class="nav_logo"><a href="index.html"><img src="assets/escuderia.png" alt=""></a></li>
         <li class="nav_to_hide_on_small"><a href="index.html#novidades">NOVIDADES</a></li>
