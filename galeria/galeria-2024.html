@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <title>2024 / GALERÍA / ESCUDERÍA PONTE CALDELAS</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <meta name="description" content="Páxina web oficial da Escudería de rally de Ponte Caldelas. Organizadores da
+    subida a Ponte Caldelas.">
+    <meta name="keywords" content="Ponte Caldelas, escuderia ponte caldelas, subida ponte caldelas, rally, caldelas,
+    concello, pontevedra, galicia, rallie, coches, competicion, carcross">
+
+    <link rel="icon" href="/assets/icons/icon_black.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/assets/icons/icon_white.ico" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type='text/javascript' src='../scripts/no_context_menu.js'></script>
+    <script type='text/javascript' src='../scripts/navigation.js'></script>
+
+    <!--SLICK CAROUSEL-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="../scripts/slick.js"></script>
+</head>
+
+<body>
+
+<div id="main_nav" class="main_nav">
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('main_nav');
+        const deadZone = 50;
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (Math.abs(scrollTop - lastScrollTop) > deadZone) {
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = '-12vh';
+                } else {
+                    // Scrolling up
+                    navbar.style.top = '0';
+                }
+
+                lastScrollTop = scrollTop;
+            }
+        });
+    </script>
+    <ul>
+        <li class="nav_to_hide_on_big animated-scale-severe"><p onclick="showPopUpNav()">MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+        <li class="nav_logo animated-scale-severe"><a href="../index.html"><img src="../assets/escuderia.png" alt=""></a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe" style="cursor: pointer" onclick="scrollToIntro()"><a>NOVIDADES</a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../comunicados.html">COMUNICADOS</a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../merchandising.html">MERCHANDISING</a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../a_escuderia.html">A ESCUDERIA</a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../galeria.html">GALERIA</a></li>
+        <li class="nav_last animated-scale-severe"><a href="../contacto.html">CONTACTO</a></li>
+    </ul>
+
+    <div id="pop_up_nav" class="pop_up_nav">
+        <ul>
+            <script>
+                function closePopUpAndScrollToIntro(){
+                    showPopUpNav()
+                    scrollToIntro()
+                }
+            </script>
+            <li class="animated-scale" style="cursor: pointer" onclick="closePopUpAndScrollToIntro()"><a>NOVIDADES</a></li>
+            <li class="animated-scale"><a href="../comunicados.html">COMUNICADOS</a></li>
+            <li class="animated-scale"><a href="../merchandising.html">MERCHANDISING</a></li>
+            <li class="animated-scale"><a href="../a_escuderia.html">A ESCUDERIA</a></li>
+            <li class="animated-scale"><a href="../galeria.html">GALERIA</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="content">
+    <article id="article-galeria-1"></article>
+
+    <article id="article-galeria-2">
+        <h1><a href="../galeria.html" style="color: white"><li class="fa fa-angle-double-left"></li></a>&nbsp;GALERÍA / 2024</h1>
+        <hr style="margin-bottom: 1rem">
+
+        <div id="gallery-wrap" class="gallery-wrap"></div>
+        <div id="modal" class="modal">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&#10005;</span>
+            <span class="modal-arrow modal-arrow-left"><i class="fa fa-angle-left"></i></span>
+            <span class="modal-arrow modal-arrow-right"><i class="fa fa-angle-right"></i></span>
+            <img class="modal-content" id="modalImage" alt="" src="" loading="eager">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            const originalRoute = "../assets/galeria/original/2024/";
+            const thumbnailRoute = "../assets/galeria/original/2024/";
+
+            let originalImages = [
+                originalRoute + "DSC2535.jpg",
+                originalRoute + "DSC2546.jpg",
+                originalRoute + "DSC2937.jpg",
+                originalRoute + "DSC2951.jpg",
+                originalRoute + "DSC2968.jpg",
+                originalRoute + "DSC2994-2.jpg",
+                originalRoute + "DSC3033.jpg",
+                originalRoute + "DSC3037.jpg",
+                originalRoute + "DSC3043.jpg",
+            ];
+
+            let thumbnailImages = [
+                thumbnailRoute + "DSC2535.jpg",
+                thumbnailRoute + "DSC2546.jpg",
+                thumbnailRoute + "DSC2937.jpg",
+                thumbnailRoute + "DSC2951.jpg",
+                thumbnailRoute + "DSC2968.jpg",
+                thumbnailRoute + "DSC2994-2.jpg",
+                thumbnailRoute + "DSC3033.jpg",
+                thumbnailRoute + "DSC3037.jpg",
+                thumbnailRoute + "DSC3043.jpg",
+                "keep"
+            ];
+
+            const galleryWrap = document.getElementById("gallery-wrap");
+
+            for (let i = 0; i < thumbnailImages.length; i++) {
+
+                let child = document.createElement("div");
+
+                if (thumbnailImages[i] !== "keep"){
+                    child = document.createElement("img");
+                    child.dataset.src = thumbnailImages[i];
+                    child.className = "gallery-wrap-photo";
+                    child.alt = "";
+                    child.loading = "lazy";
+
+                    child.onclick = function() {
+                        openModal(i);
+                    };
+                } else {
+                    child.style.height = "0";
+                    child.style.width = "33%";
+                    child.style.flex = "0 0 33%";
+                    child.style.paddingLeft = "10px";
+                    child.style.paddingRight = "10px";
+                    child.style.boxSizing = "border-box";
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.removeAttribute("data-src");
+                            observer.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                galleryWrap.appendChild(child);
+                observer.observe(child);
+            }
+
+            const modal = document.getElementById("modal");
+            let span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            };
+
+            function openModal(index) {
+                const modal = document.getElementById("modal");
+                const modalImg = document.getElementById("modalImage");
+                const captionText = document.getElementById("caption");
+
+                modal.style.display = "block";
+                modalImg.src = originalImages[index];
+                captionText.innerHTML = ""; // Agrega texto de la imagen si es necesario
+
+                // ARROWS MANAGEMENT
+                const modalArrowLeft = document.querySelector(".modal-arrow-left");
+                const modalArrowRight = document.querySelector(".modal-arrow-right");
+
+                modalArrowLeft.addEventListener("click", function () {
+                    index = (index - 1 + originalImages.length) % originalImages.length;
+                    modalImg.src = originalImages[index];
+                });
+
+                modalArrowRight.addEventListener("click", function () {
+                    index = (index + 1) % originalImages.length;
+                    modalImg.src = originalImages[index];
+                });
+            }
+
+        </script>
+
+
+    </article>
+
+</div>
+
+<footer>
+    <p>OS NOSOS SOCIOS E PATROCINADORES</p>
+</footer>
+
+</body>
+</html>
