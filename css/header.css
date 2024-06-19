@@ -1,0 +1,91 @@
+@import "colors.css";
+@import "navigation-button.css";
+
+.main_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 5px;
+    overflow: hidden;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+}
+
+.main_nav li {
+    float: none;
+    padding: 0 15px;
+}
+
+.main_nav li.nav_last {
+    margin-left: auto; /* Empuja este elemento al extremo derecho */
+}
+
+.main_nav li a {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main_nav li p {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main_nav li a:hover {
+
+
+}
+
+.nav_to_hide_on_big {
+    display: none;
+}
+
+.main_nav img {
+    height: 4rem;
+    width: auto;
+}
+
+.pop_up_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 5px;
+    width: auto;
+    height: 100vh;
+    background-color: #181818;
+    display: block;
+}
+
+.pop_up_nav li {
+    float: none;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 900px) {
+
+    .nav_to_hide_on_small {
+        display: none;
+    }
+
+    .nav_to_hide_on_big {
+        display: block;
+        margin-right: auto; /* Empuja el primer elemento hacia la izquierda */
+    }
+
+    .main_nav ul {
+        justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    }
+
+    .nav_logo {
+        margin-left: auto; /* Empuja el segundo elemento al centro */
+        margin-right: auto; /* Empuja el segundo elemento al centro */
+    }
+
+}

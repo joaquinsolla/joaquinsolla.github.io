@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <title>A ESCUDERÍA / ESCUDERÍA PONTE CALDELAS</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <meta name="description" content="Páxina web oficial da Escudería de rally de Ponte Caldelas. Organizadores da
+    subida a Ponte Caldelas.">
+    <meta name="keywords" content="Ponte Caldelas, escuderia ponte caldelas, subida ponte caldelas, rally, caldelas,
+    concello, pontevedra, galicia, rallie, coches, competicion, carcross">
+
+    <link rel="icon" href="/assets/icons/icon_black.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/assets/icons/icon_white.ico" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type='text/javascript' src='scripts/no_context_menu.js'></script>
+    <script type='text/javascript' src='scripts/navigation.js'></script>
+
+    <!--SLICK CAROUSEL-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/slick.js"></script>
+</head>
+
+<body>
+
+<div id="main_nav" class="main_nav">
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('main_nav');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                navbar.style.top = '-12vh';
+            } else {
+                // Scrolling up
+                navbar.style.top = '0';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    <ul>
+        <li class="nav_to_hide_on_big"><p onclick="showPopUpNav()">MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+        <li class="nav_logo"><a href="index.html"><img src="assets/escuderia.png" alt=""></a></li>
+        <li class="nav_to_hide_on_small"><a href="index.html#novidades">NOVIDADES</a></li>
+        <li class="nav_to_hide_on_small"><a href="comunicados.html">COMUNICADOS</a></li>
+        <li class="nav_to_hide_on_small"><a href="merchandising.html">MERCHANDISING</a></li>
+        <li class="nav_to_hide_on_small"><a href="a_escuderia.html">A ESCUDERIA</a></li>
+        <li class="nav_to_hide_on_small"><a href="galeria.html">GALERIA</a></li>
+        <li class="nav_last"><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+
+    <div id="pop_up_nav" class="pop_up_nav">
+        <ul>
+            <li><a href="index.html#novidades">NOVIDADES</a></li>
+            <li><a href="comunicados.html">COMUNICADOS</a></li>
+            <li><a href="merchandising.html">MERCHANDISING</a></li>
+            <li><a href="a_escuderia.html">A ESCUDERIA</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="content">
+    <article id="article-a-escuderia-1">
+        content 1
+    </article>
+    <article id="article-a-escuderia-2">
+        content 2
+    </article>
+    <article id="article-a-escuderia-3">
+        content 3
+    </article>
+</div>
+
+<footer>
+    <p>OS NOSOS SOCIOS E PATROCINADORES</p>
+</footer>
+
+</body>
+</html>

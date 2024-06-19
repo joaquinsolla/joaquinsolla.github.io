@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <title>COMUNICADOS / ESCUDERÍA PONTE CALDELAS</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <meta name="description" content="Páxina web oficial da Escudería de rally de Ponte Caldelas. Organizadores da
+    subida a Ponte Caldelas.">
+    <meta name="keywords" content="Ponte Caldelas, escuderia ponte caldelas, subida ponte caldelas, rally, caldelas,
+    concello, pontevedra, galicia, rallie, coches, competicion, carcross">
+
+    <link rel="icon" href="/assets/icons/icon_black.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/assets/icons/icon_white.ico" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type='text/javascript' src='scripts/no_context_menu.js'></script>
+    <script type='text/javascript' src='scripts/navigation.js'></script>
+
+    <!--SLICK CAROUSEL-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/slick.js"></script>
+</head>
+
+<body>
+
+<div id="main_nav" class="main_nav">
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('main_nav');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                navbar.style.top = '-12vh';
+            } else {
+                // Scrolling up
+                navbar.style.top = '0';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    <ul>
+        <li class="nav_to_hide_on_big"><p onclick="showPopUpNav()">MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+        <li class="nav_logo"><a href="index.html"><img src="assets/escuderia.png" alt=""></a></li>
+        <li class="nav_to_hide_on_small"><a href="index.html#novidades">NOVIDADES</a></li>
+        <li class="nav_to_hide_on_small"><a href="comunicados.html">COMUNICADOS</a></li>
+        <li class="nav_to_hide_on_small"><a href="merchandising.html">MERCHANDISING</a></li>
+        <li class="nav_to_hide_on_small"><a href="a_escuderia.html">A ESCUDERIA</a></li>
+        <li class="nav_to_hide_on_small"><a href="galeria.html">GALERIA</a></li>
+        <li class="nav_last"><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+
+    <div id="pop_up_nav" class="pop_up_nav">
+        <ul>
+            <li><a href="index.html#novidades">NOVIDADES</a></li>
+            <li><a href="comunicados.html">COMUNICADOS</a></li>
+            <li><a href="merchandising.html">MERCHANDISING</a></li>
+            <li><a href="a_escuderia.html">A ESCUDERIA</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="content">
+    <article id="article-comunicados-1"></article>
+
+    <article id="article-comunicados-2">
+        <h1>COMUNICADOS</h1>
+        <hr style="margin-bottom: 1rem">
+
+        <div class="flex">
+            <div class="flex-item-20">
+                <h2>Acceso rápido</h2>
+                <ul>
+                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-1" style="color: black">Comunicado 1</a></li>
+                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-2" style="color: black">Comunicado 2</a></li>
+                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-3" style="color: black">Comunicado 3</a></li>
+                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-4" style="color: black">Comunicado 4</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-item-80">
+                <div id="comunicado-1" class="comunicado">
+                    <div class="comunicado-content">
+                        <h2>Lorem Ipsum</h2>
+                        <h5>13/06/2024</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
+                        <div class="buttons-container">
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
+                                </button>
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado-content">
+                        <div class="comunicado-content-img">
+                            <a href="assets/doc1.webp" target="_blank">
+                                <img src="assets/doc1.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 1rem 0">
+                <div id="comunicado-2" class="comunicado">
+                    <div class="comunicado-content">
+                        <h2>Lorem Ipsum</h2>
+                        <h5>10/06/2024</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
+                        <div class="buttons-container">
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
+                                </button>
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado-content">
+                        <div class="comunicado-content-img">
+                            <a href="assets/doc2.webp" target="_blank">
+                                <img src="assets/doc2.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 1rem 0">
+                <div id="comunicado-3" class="comunicado">
+                    <div class="comunicado-content">
+                        <h2>Lorem Ipsum</h2>
+                        <h5>10/06/2024</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
+                        <div class="buttons-container">
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
+                                </button>
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado-content">
+                        <div class="comunicado-content-img">
+                            <a href="assets/doc3.webp" target="_blank">
+                                <img src="assets/doc3.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 1rem 0">
+                <div id="comunicado-4" class="comunicado">
+                    <div class="comunicado-content">
+                        <h2>Lorem Ipsum</h2>
+                        <h5>10/06/2024</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
+                        <div class="buttons-container">
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
+                                </button>
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" style="text-decoration: transparent">
+                                <button class="button-white">
+                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comunicado-content">
+                        <div class="comunicado-content-img">
+                            <a href="assets/doc4.webp" target="_blank">
+                                <img src="assets/doc4.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+</div>
+
+<footer>
+    <p>OS NOSOS SOCIOS E PATROCINADORES</p>
+</footer>
+
+</body>
+</html>
