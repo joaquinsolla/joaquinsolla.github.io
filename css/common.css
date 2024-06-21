@@ -90,7 +90,7 @@ h2{
 }
 
 #article-index-1 {
-    background-image: url("../assets/index_slick/slick1.webp");
+    background-image: url("../assets/background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -405,6 +405,11 @@ button:hover{
     transform: scale(1.025);
 }
 
+#article-1-img{
+    height: 40vh;
+}
+
+
 @media (max-width: 900px) {
 
     article{
@@ -427,7 +432,7 @@ button:hover{
     }
 
     #article-1-img{
-        display: none;
+        height: 22.5vh;
     }
 
     .comunicado{
