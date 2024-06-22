@@ -91,9 +91,9 @@ h2{
 
 #article-index-1 {
     background-color: #1d1d1b;
-    background-image: url("../assets/line2.webp");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../assets/lines.webp");
+    background-size: 47.5vw auto; /* Ajusta la altura del background */
+    background-position: top right;
     background-repeat: no-repeat;
     transition: background-image 1s ease-in-out; /* IMAGES MUST BE SAME PROPORTION!!! */
     min-height: 100vh;
@@ -426,7 +426,7 @@ button:hover{
     }
 
     #article-index-1 {
-        background-image: url("../assets/line3.webp");
+        background-size: 60vw auto; /* Ajusta la altura del background */
         min-height: 50vh;
         height: 50vh;
     }
