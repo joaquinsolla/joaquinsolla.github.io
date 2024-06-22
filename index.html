@@ -84,8 +84,9 @@
     <div class="content">
         <article id="article-index-1">
             <script>
+                /*
                 const images = [
-                    'url(assets/background.webp)'
+                    'url(assets/............)'
                 ];
 
                 function changeBackground() {
@@ -100,6 +101,7 @@
                 window.onload = () => {
                     changeBackground();
                 };
+                */
             </script>
             <script>
                 function scrollToIntro(){
@@ -129,13 +131,17 @@
                 }
             </script>
             <div style="height: 100%; width: 100%; align-content: end; text-align: center">
-                <div style="height: 80%; width: 100%; align-content: center; text-align: center; margin-top: 5vh">
-                    <img id="article-1-img" src="assets/logo.webp" alt="">
+                <div style="height: 75%; width: 100%; align-content: center; text-align: center; margin-top: 5vh">
+                    <img id="article-1-img" src="assets/logo.webp" alt="" style="opacity: 0; animation: fadein 1s ease-in-out 0.5s forwards;">
                 </div>
-                <div id="updates-button" onclick="scrollToIntro()" style="height: 20%; margin-bottom: 15vh; font-family: 'Kanit', sans-serif; font-style: italic; font-size: 1.2rem; cursor: pointer">
+
+                <div id="updates-button" style="height: 25%">
+                    <img id="article-1-img-letters" src="assets/escuderia_letras.webp" alt="" style="opacity: 0; animation: fadein 1s ease-in-out 1.25s forwards;">
+                    <!--
                     <i class="fa fa-angle-double-down" aria-hidden="true" style="font-size: 1.5rem; animation: bounce 3s infinite"></i>
                     &nbsp;&nbsp;ÚLTIMAS ACTUALIZACIÓNS&nbsp;&nbsp;
                     <i class="fa fa-angle-double-down" aria-hidden="true" style="font-size: 1.5rem; animation: bounce 3s infinite"></i>
+                    -->
                 </div>
             </div>
         </article>

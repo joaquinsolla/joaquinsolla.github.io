@@ -90,7 +90,8 @@ h2{
 }
 
 #article-index-1 {
-    background-image: url("../assets/background.webp");
+    background-color: #1d1d1b;
+    background-image: url("../assets/line2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -409,6 +410,10 @@ button:hover{
     height: 40vh;
 }
 
+#article-1-img-letters{
+    height: 4.5vh;
+    padding-bottom: 30vh;
+}
 
 @media (max-width: 900px) {
 
@@ -421,6 +426,7 @@ button:hover{
     }
 
     #article-index-1 {
+        background-image: url("../assets/line3.webp");
         min-height: 50vh;
         height: 50vh;
     }
