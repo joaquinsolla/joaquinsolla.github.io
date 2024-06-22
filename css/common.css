@@ -9,6 +9,9 @@ SCREEN WIDTHS:
 FONTS:
 https://fonts.google.com/specimen/Kanit
 https://fonts.google.com/specimen/Roboto
+
+COLORS:
+2024: #bce519
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -116,21 +119,20 @@ h2{
     min-height: 100vh;
 }
 
+#article-index-countdown{
+    background-color: black;
+    color: white;
+    padding: 15vh 0;
+}
+
+#trazado-img{
+    width: auto;
+    max-width: 80vw;
+    height: 55vh;
+}
+
 article{
     padding: 2.5rem 5rem;
-}
-
-#novidades {
-    background: black;
-    color: white;
-    min-height: auto;
-}
-
-#calendario {
-    background: white;
-    color: black;
-    margin: 0;
-    height: 80vh;
 }
 
 .comunicado{
@@ -232,7 +234,7 @@ button:hover{
     height: 33vh;
 }
 
-.flex{
+.flex-to-block{
     display: flex;
 }
 
@@ -242,6 +244,10 @@ button:hover{
 
 .flex-item-80{
     width: 80%;
+}
+
+.flex-item-50{
+    width: 50%;
 }
 
 #article-merchandising-1 {
@@ -415,6 +421,22 @@ button:hover{
     padding-bottom: 30vh;
 }
 
+#countdown{
+    font-size: 4.5rem;
+}
+
+#subida-a-text{
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem
+}
+
+#ponte-caldelas-text{
+    color: #bce519;
+    letter-spacing: 0.1rem
+}
+
+
+
 @media (max-width: 900px) {
 
     article{
@@ -476,7 +498,7 @@ button:hover{
         text-align: center;
     }
 
-    .flex{
+    .flex-to-block{
         display: block;
     }
 
@@ -488,6 +510,10 @@ button:hover{
         width: 100%;
     }
 
+    .flex-item-50{
+        width: 100%;
+    }
+
     .flexbox-merch-item {
         width: calc(50% - 1rem);
         max-width: none;
@@ -496,6 +522,33 @@ button:hover{
     .flexbox-gallery-item {
         flex: 1 1 calc(50% - 1rem);
         max-width: calc(50% - 1rem);
+    }
+
+    #countdown{
+        font-size: 2.75rem;
+        margin-bottom: 5vh;
+    }
+
+    #subida-a-text{
+        font-size: 1.15rem;
+        letter-spacing: 0.15rem
+    }
+
+    #ponte-caldelas-text{
+        color: #bce519;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem
+    }
+
+    #article-index-countdown{
+        padding: 2vh 0 5vh 0;
+    }
+
+    #trazado-img{
+        width: auto;
+        max-width: 50vw;
+        height: auto;
+        max-height: 55vh;
     }
 
 }

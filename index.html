@@ -55,7 +55,6 @@
         <ul>
             <li class="nav_to_hide_on_big animated-scale-severe"><p onclick="showPopUpNav()">MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
             <li class="nav_logo animated-scale-severe"><a href="index.html"><img src="assets/logo.webp" alt=""></a></li>
-            <li class="nav_to_hide_on_small animated-scale-severe" style="cursor: pointer" onclick="scrollToIntro()"><a>NOVIDADES</a></li>
             <li class="nav_to_hide_on_small animated-scale-severe"><a href="comunicados.html">COMUNICADOS</a></li>
             <li class="nav_to_hide_on_small animated-scale-severe"><a href="merchandising.html">MERCHANDISING</a></li>
             <li class="nav_to_hide_on_small animated-scale-severe"><a href="escuderia.html">A ESCUDERIA</a></li>
@@ -71,7 +70,6 @@
                         scrollToIntro()
                     }
                 </script>
-                <li class="animated-scale" style="cursor: pointer" onclick="closePopUpAndScrollToIntro()"><a>NOVIDADES</a></li>
                 <li class="animated-scale"><a href="comunicados.html">COMUNICADOS</a></li>
                 <li class="animated-scale"><a href="merchandising.html">MERCHANDISING</a></li>
                 <li class="animated-scale"><a href="escuderia.html">A ESCUDERIA</a></li>
@@ -145,89 +143,44 @@
                 </div>
             </div>
         </article>
-        <article id="novidades">
-            <h1>NOVIDADES</h1>
-            <hr style="margin-bottom: 1rem">
+        <article id="article-index-countdown" class="flex-to-block">
+            <div class="flex-item-50" style="text-align: center; align-content: center;">
+                <h2 id="subida-a-text">VII SUBIDA A</h2>
+                <h2 id="ponte-caldelas-text">PONTE CALDELAS</h2>
+                <h1 id="countdown"></h1>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Sept 7, 2024 9:00:00").getTime();
 
-            <div id="novidade-1" class="comunicado">
-                <div class="comunicado-content">
-                    <h2>Lorem Ipsum</h2>
-                    <h5>13/06/2024</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
-                    <p>Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
-                    <div class="buttons-container">
-                        <a href="" target="_blank" style="text-decoration: transparent">
-                            <button>
-                                <i class="fa fa-download"></i>&nbsp;Descargar archivo
-                            </button>
-                        </a>
-                        &nbsp;
-                        <a href="" target="_blank" style="text-decoration: transparent">
-                            <button>
-                                <i class="fa fa-share-alt"></i>&nbsp;Compartir
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="comunicado-content">
-                    <div class="comunicado-content-img">
-                        <a href="assets/comunicados/doc1.webp" target="_blank">
-                            <img src="assets/comunicados/doc1.webp" class="animated-scale" alt="">
-                        </a>
-                    </div>
-                </div>
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id="demo"
+                        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                            + minutes + "m " + seconds + "s ";
+
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>
             </div>
-
-            <hr style="margin: 1rem 0">
-
-            <div id="novidade-2" class="comunicado">
-                <div class="comunicado-content">
-                    <h2>Lorem Ipsum</h2>
-                    <h5>10/06/2024</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
-                    <div class="buttons-container">
-                        <a href="" target="_blank" style="text-decoration: transparent">
-                            <button>
-                                <i class="fa fa-download"></i>&nbsp;Descargar archivo
-                            </button>
-                        </a>
-                        &nbsp;
-                        <a href="" target="_blank" style="text-decoration: transparent">
-                            <button>
-                                <i class="fa fa-share-alt"></i>&nbsp;Compartir
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="comunicado-content">
-                    <div class="comunicado-content-img">
-                        <a href="assets/comunicados/doc2.webp" target="_blank">
-                            <img src="assets/comunicados/doc2.webp" alt="" class="animated-scale">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </article>
-        <article id="calendario">
-            <h1>CALENDARIO</h1>
-            <hr style="margin-bottom: 1rem">
-            <div class="buttons-container">
-                <a href="" target="_blank" style="text-decoration: transparent">
-                    <button class="button-white">
-                        <i class="fa fa-calendar-plus-o"></i>&nbsp;Suscribirse (URL iCal)
-                    </button>
-                </a>
-                &nbsp;
-                <a href="" target="_blank">
-                    <button class="button-white">
-                        <i class="fa fa-share-alt"></i>&nbsp;Compartir
-                    </button>
-                </a>
-            </div>
-            <br>
-            <div style="height: 60vh">
-                <iframe src="https://calendar.google.com/calendar/embed?src=288c78bbc712e286e835fe7c8bd69e2924084025ed23dab16586a677fc6b93f3%40group.calendar.google.com&ctz=Europe%2FAmsterdam" style="border: 0" width="100%" height="100%"></iframe>
+            <div class="flex-item-50" style="text-align: center; align-content: center; ">
+                <img id="trazado-img" src="assets/trazado.webp" alt="" style="opacity: 0; animation: fadein 1s ease-in-out 0.5s forwards;">
             </div>
 
         </article>
