@@ -83,7 +83,7 @@
 <div class="content">
     <article class="article-header">
         <div style="height: 100%; width: 100%; align-content: center; text-align: center; margin-top: 5vh">
-            <img class="first-article-img" src="assets/escuderia_letras.webp" alt="" style="opacity: 0; animation: fadein 1s ease-in-out 0.5s forwards;">
+            <img class="first-article-img" src="assets/escuderia_letras.webp" alt="">
         </div>
     </article>
 
@@ -103,46 +103,42 @@
                         if (element.style.display === "none" || element.style.display === "") {
                             element.style.display = "block";
                             icon.style.transform = "none";
-                            //icon.classList.remove('fa-angle-right');
-                            //icon.classList.add('fa-angle-down');
                         } else {
                             element.style.display = "none";
                             icon.style.transform = "rotate(-90deg)";
-                            //icon.classList.remove('fa-angle-down');
-                            //icon.classList.add('fa-angle-right');
                         }
                     }
                 </script>
 
-                <h4 class="list-header" onclick="displayList(this, 'mapas-horarios')">Mapas e horarios&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <h4 class="list-header" onclick="displayList(this, 'mapas-horarios')">Mapas e horarios&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s; color: #bce519"></i></h4>
                 <ul id="mapas-horarios" style="display: block;">
-                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-map-o"></i>&nbsp;&nbsp;Mapa</a></li>
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mapa</a></li>
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Horarios</a></li>
                 </ul>
 
-                <h4 class="list-header" onclick="displayList(this, 'inscritos')">Lista de inscritos&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <h4 class="list-header" onclick="displayList(this, 'inscritos')">Lista de inscritos&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s; color: #bce519"></i></h4>
                 <ul id="inscritos" style="display: block;">
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Lista de inscritos</a></li>
                 </ul>
 
-                <h4 class="list-header" onclick="displayList(this, 'resultados')">Resultados&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <h4 class="list-header" onclick="displayList(this, 'resultados')">Resultados&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s; color: #bce519"></i></h4>
                 <ul id="resultados" style="display: block;">
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Resultados</a></li>
                 </ul>
 
-                <h4 class="list-header" onclick="displayList(this, 'competidores')">Documentación competidores&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <h4 class="list-header" onclick="displayList(this, 'competidores')">Documentación competidores&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s; color: #bce519"></i></h4>
                 <ul id="competidores" style="display: block;">
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 1</a></li>
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 2</a></li>
                 </ul>
 
-                <h4 class="list-header" onclick="displayList(this, 'comisarios')">Documentación comisarios&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <h4 class="list-header" onclick="displayList(this, 'comisarios')">Documentación comisarios&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s; color: #bce519"></i></h4>
                 <ul id="comisarios" style="display: block;">
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 1</a></li>
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 2</a></li>
                 </ul>
 
-                <h4 class="list-header" onclick="displayList(this, 'outros')">Outros&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <h4 class="list-header" onclick="displayList(this, 'outros')">Outros&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s; color: #bce519"></i></h4>
                 <ul id="outros" style="display: block;">
                     <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-image-o"></i>&nbsp;&nbsp;Cartel 2024</a></li>
                 </ul>
@@ -156,7 +152,16 @@
 </div>
 
 <footer>
-    <p>OS NOSOS SOCIOS E PATROCINADORES</p>
+    <div class="footer-content">
+        <img class="first-article-img" src="assets/escuderia_letras.webp" alt="" style="width: 12.5rem; height: auto">
+        <p>Páxina oficial da Escudería Ponte Caldelas, organizadores da Subida A Ponte Caldelas.</p>
+        <p style="font-weight: 600">Síguenos en redes</p>
+        <div style="display: flex">
+            <a href="https://www.instagram.com/escuderiapontecaldelas" target="_blank" style="font-size: 1.5rem" class="animated-scale-severe"><i class="fa fa-instagram"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.facebook.com/escuderiapontecaldelas/" target="_blank" style="font-size: 1.5rem" class="animated-scale-severe"><i class="fa fa-facebook-square"></i></a>
+        </div>
+    </div>
 </footer>
 
 </body>

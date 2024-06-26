@@ -26,6 +26,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script type="text/javascript" src="scripts/slick.js"></script>
+    <script type="text/javascript" src="scripts/progress_bar.js"></script>
 </head>
 
 <body>
@@ -82,7 +83,7 @@
 <div class="content">
     <article class="article-header">
         <div style="height: 100%; width: 100%; align-content: center; text-align: center; margin-top: 5vh">
-            <img class="first-article-img" src="assets/escuderia_letras.webp" alt="" style="opacity: 0; animation: fadein 1s ease-in-out 0.5s forwards;">
+            <img class="first-article-img" src="assets/escuderia_letras.webp" alt="">
         </div>
     </article>
 
@@ -90,75 +91,91 @@
         <h1>MERCHANDISING</h1>
         <hr style="margin-bottom: 1rem">
         <p><i class="fa fa-info-circle" aria-hidden="true" style="font-size: 1rem"></i>&nbsp;Maecenas ac magna facilisis, volutpat ipsum ut, elementum sapien. Ut eget mi imperdiet quam vestibulum posuere ut a lorem.</p>
-        <div class="flexbox-merch">
-            <div class="flexbox-merch-item">
-                <a href="" target="_blank">
-                    <img src="assets/merch/merch1.webp" alt="">
-                    <div class="flexbox-merch-item-text">
-                        Lanyard Subida Ponte Caldelas
-                        <br>
-                        <b>4.99€</b>
-                    </div>
-                </a>
+
+        <div class="container-with-progressbar">
+            <div class="progress-bar">
+                <div class="progress-indicator"></div>
             </div>
-            <div class="flexbox-merch-item">
-                <a href="" target="_blank">
-                    <img src="assets/merch/merch2.webp" alt="">
-                    <div class="flexbox-merch-item-text">
-                        Camiseta Subida Ponte Caldelas Diseño 1
-                        <br>
-                        <b>9.99€</b>
-                    </div>
-                </a>
-            </div>
-            <div class="flexbox-merch-item">
-                <a href="" target="_blank">
-                    <img src="assets/merch/merch3.webp" alt="">
-                    <div class="flexbox-merch-item-text">
-                        Camiseta Subida Ponte Caldelas Diseño 2
-                        <br>
-                        <b>9.99€</b>
-                    </div>
-                </a>
-            </div>
-            <div class="flexbox-merch-item">
-                <a href="" target="_blank">
-                    <img src="assets/merch/merch4.webp" alt="">
-                    <div class="flexbox-merch-item-text">
-                        Mochila Escuderia Ponte Caldelas
-                        <br>
-                        <b>7.99€</b>
-                    </div>
-                </a>
-            </div>
-            <div class="flexbox-merch-item">
-                <a href="" target="_blank">
-                    <img src="assets/merch/merch5.webp" alt="">
-                    <div class="flexbox-merch-item-text">
-                        Pegatina Subida Ponte Caldelas 2024
-                        <br>
-                        <b>3€</b>
-                    </div>
-                </a>
-            </div>
-            <div class="flexbox-merch-item">
-                <a href="" target="_blank">
-                    <img src="assets/merch/merch6.webp" alt="">
-                    <div class="flexbox-merch-item-text">
-                        Camiseta Escuderia Ponte Caldelas
-                        <br>
-                        <b>11.99€</b>
-                    </div>
-                </a>
+            <div class="flexbox-merch" style="width: 100%;">
+                <div class="flexbox-merch-item">
+                    <a href="" target="_blank">
+                        <img src="assets/merch/merch1.webp" alt="">
+                        <div class="flexbox-merch-item-text">
+                            Lanyard Subida Ponte Caldelas
+                            <br>
+                            <b>4.99€</b>
+                        </div>
+                    </a>
+                </div>
+                <div class="flexbox-merch-item">
+                    <a href="" target="_blank">
+                        <img src="assets/merch/merch2.webp" alt="">
+                        <div class="flexbox-merch-item-text">
+                            Camiseta Subida Ponte Caldelas Diseño 1
+                            <br>
+                            <b>9.99€</b>
+                        </div>
+                    </a>
+                </div>
+                <div class="flexbox-merch-item">
+                    <a href="" target="_blank">
+                        <img src="assets/merch/merch3.webp" alt="">
+                        <div class="flexbox-merch-item-text">
+                            Camiseta Subida Ponte Caldelas Diseño 2
+                            <br>
+                            <b>9.99€</b>
+                        </div>
+                    </a>
+                </div>
+                <div class="flexbox-merch-item">
+                    <a href="" target="_blank">
+                        <img src="assets/merch/merch4.webp" alt="">
+                        <div class="flexbox-merch-item-text">
+                            Mochila Escuderia Ponte Caldelas
+                            <br>
+                            <b>7.99€</b>
+                        </div>
+                    </a>
+                </div>
+                <div class="flexbox-merch-item">
+                    <a href="" target="_blank">
+                        <img src="assets/merch/merch5.webp" alt="">
+                        <div class="flexbox-merch-item-text">
+                            Pegatina Subida Ponte Caldelas 2024
+                            <br>
+                            <b>3€</b>
+                        </div>
+                    </a>
+                </div>
+                <div class="flexbox-merch-item">
+                    <a href="" target="_blank">
+                        <img src="assets/merch/merch6.webp" alt="">
+                        <div class="flexbox-merch-item-text">
+                            Camiseta Escuderia Ponte Caldelas
+                            <br>
+                            <b>11.99€</b>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+
     </article>
 
 
 </div>
 
 <footer>
-    <p>OS NOSOS SOCIOS E PATROCINADORES</p>
+    <div class="footer-content">
+        <img class="first-article-img" src="assets/escuderia_letras.webp" alt="" style="width: 12.5rem; height: auto">
+        <p>Páxina oficial da Escudería Ponte Caldelas, organizadores da Subida A Ponte Caldelas.</p>
+        <p style="font-weight: 600">Síguenos en redes</p>
+        <div style="display: flex">
+            <a href="https://www.instagram.com/escuderiapontecaldelas" target="_blank" style="font-size: 1.5rem" class="animated-scale-severe"><i class="fa fa-instagram"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.facebook.com/escuderiapontecaldelas/" target="_blank" style="font-size: 1.5rem" class="animated-scale-severe"><i class="fa fa-facebook-square"></i></a>
+        </div>
+    </div>
 </footer>
 
 </body>
