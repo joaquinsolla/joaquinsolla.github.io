@@ -207,15 +207,16 @@ button:hover{
 }
 
 #article-comunicados-2{
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     min-height: auto;
 }
 
 #article-comunicados-1 {
-    background-image: url("../assets/index_slick/slick1.webp");
-    background-size: cover;
-    background-position: center;
+    background-color: #1d1d1b;
+    background-image: url("../assets/lines.webp");
+    background-size: 33vw auto; /* Ajusta la altura del background */
+    background-position: top right;
     background-repeat: no-repeat;
     height: 33vh;
     position: relative;
@@ -229,9 +230,10 @@ button:hover{
     bottom: 0;
     left: 0;
     pointer-events: none;
-    /*background-image: linear-gradient(to bottom, rgba(255,255,255,0) 95%, rgba(255,255,255, 1) 100%);*/
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 90%, rgba(0,0,0, 1) 100%);
     width: 100%;
-    height: 33vh;
+    height: 100vh;
+    min-height: 100vh;
 }
 
 .flex-to-block{
@@ -412,7 +414,7 @@ button:hover{
     transform: scale(1.025);
 }
 
-#article-1-img{
+#article-1-index-img{
     height: 50%;
 }
 
@@ -435,7 +437,34 @@ button:hover{
     letter-spacing: 0.1rem
 }
 
+.container-with-progressbar {
+    display: flex;
+    height: auto;
+}
 
+.progress-bar {
+    width: 1px;
+    background-color: white;
+    position: relative;
+    margin: 1rem 2rem;
+}
+
+.progress-indicator {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bce519;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.first-article-img{
+    width: 40%;
+    height: auto;
+}
 
 @media (max-width: 900px) {
 
@@ -451,6 +480,7 @@ button:hover{
         background-size: 60vw auto; /* Ajusta la altura del background */
         min-height: 50vh;
         height: 50vh;
+        background-image: url("../assets/lines_small.webp");
     }
 
     #article-index-1::after {
@@ -459,8 +489,16 @@ button:hover{
         background-image: linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0, 1) 95%);
     }
 
-    #article-1-img{
+    #article-comunicados-1 {
+        background-image: url("../assets/lines_small.webp");
+    }
+
+    #article-1-index-img{
         height: 60%;
+    }
+
+    .first-article-img{
+        width: 80%;
     }
 
     .comunicado{
