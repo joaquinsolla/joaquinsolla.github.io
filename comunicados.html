@@ -26,6 +26,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script type="text/javascript" src="scripts/slick.js"></script>
+    <script type="text/javascript" src="scripts/progress_bar.js"></script>
 </head>
 
 <body>
@@ -80,140 +81,78 @@
 </div>
 
 <div class="content">
-    <article id="article-comunicados-1"></article>
+    <article class="article-header">
+        <div style="height: 100%; width: 100%; align-content: center; text-align: center; margin-top: 5vh">
+            <img class="first-article-img" src="assets/escuderia_letras.webp" alt="" style="opacity: 0; animation: fadein 1s ease-in-out 0.5s forwards;">
+        </div>
+    </article>
 
     <article id="article-comunicados-2">
         <h1>COMUNICADOS</h1>
         <hr style="margin-bottom: 1rem">
+        <div class="container-with-progressbar">
+            <div class="progress-bar">
+                <div class="progress-indicator"></div>
+            </div>
+            <div style="width: 100%">
+                <script>
+                    function displayList(self, id) {
+                        var element = document.getElementById(id);
+                        var icon = self.querySelector('.fa');
 
-        <div class="flex-to-block">
-            <div class="flex-item-20">
-                <h2>Acceso rápido</h2>
-                <ul>
-                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-1" style="color: black">Comunicado 1</a></li>
-                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-2" style="color: black">Comunicado 2</a></li>
-                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-3" style="color: black">Comunicado 3</a></li>
-                    <li style="margin-bottom: 0.33rem"><a href="comunicados.html#comunicado-4" style="color: black">Comunicado 4</a></li>
+                        if (element.style.display === "none" || element.style.display === "") {
+                            element.style.display = "block";
+                            icon.style.transform = "none";
+                            //icon.classList.remove('fa-angle-right');
+                            //icon.classList.add('fa-angle-down');
+                        } else {
+                            element.style.display = "none";
+                            icon.style.transform = "rotate(-90deg)";
+                            //icon.classList.remove('fa-angle-down');
+                            //icon.classList.add('fa-angle-right');
+                        }
+                    }
+                </script>
+
+                <h4 class="list-header" onclick="displayList(this, 'mapas-horarios')">Mapas e horarios&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <ul id="mapas-horarios" style="display: block;">
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-map-o"></i>&nbsp;&nbsp;Mapa</a></li>
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Horarios</a></li>
                 </ul>
-            </div>
 
-            <div class="flex-item-80">
-                <div id="comunicado-1" class="comunicado">
-                    <div class="comunicado-content">
-                        <h2>Lorem Ipsum</h2>
-                        <h5>13/06/2024</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
-                        <div class="buttons-container">
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
-                                </button>
-                            </a>
-                            &nbsp;
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="comunicado-content">
-                        <div class="comunicado-content-img">
-                            <a href="assets/comunicados/doc1.webp" target="_blank" class="animated-scale">
-                                <img src="assets/comunicados/doc1.webp" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <hr style="margin: 1rem 0">
-                <div id="comunicado-2" class="comunicado">
-                    <div class="comunicado-content">
-                        <h2>Lorem Ipsum</h2>
-                        <h5>10/06/2024</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
-                        <div class="buttons-container">
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
-                                </button>
-                            </a>
-                            &nbsp;
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="comunicado-content">
-                        <div class="comunicado-content-img">
-                            <a href="assets/comunicados/doc2.webp" target="_blank" class="animated-scale">
-                                <img src="assets/comunicados/doc2.webp" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <hr style="margin: 1rem 0">
-                <div id="comunicado-3" class="comunicado">
-                    <div class="comunicado-content">
-                        <h2>Lorem Ipsum</h2>
-                        <h5>10/06/2024</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
-                        <div class="buttons-container">
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
-                                </button>
-                            </a>
-                            &nbsp;
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="comunicado-content">
-                        <div class="comunicado-content-img">
-                            <a href="assets/comunicados/doc3.webp" target="_blank" class="animated-scale">
-                                <img src="assets/comunicados/doc3.webp" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <hr style="margin: 1rem 0">
-                <div id="comunicado-4" class="comunicado">
-                    <div class="comunicado-content">
-                        <h2>Lorem Ipsum</h2>
-                        <h5>10/06/2024</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis est leo, consectetur efficitur felis vulputate in. Suspendisse sit amet quam elit. Mauris eu suscipit turpis, et finibus neque. Nam posuere, eros et dapibus vulputate, mi justo imperdiet urna, sed fringilla diam augue in dui. Nulla convallis neque quis eleifend pellentesque. Aliquam tincidunt massa sit amet nisi porttitor, eu fermentum lacus laoreet. Donec neque est, facilisis ut risus eget, malesuada pharetra nulla. Mauris pharetra elit volutpat tristique fringilla.</p>
-                        <div class="buttons-container">
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-download"></i>&nbsp;Descargar archivo
-                                </button>
-                            </a>
-                            &nbsp;
-                            <a href="" target="_blank" style="text-decoration: transparent">
-                                <button class="button-white">
-                                    <i class="fa fa-share-alt"></i>&nbsp;Compartir
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="comunicado-content">
-                        <div class="comunicado-content-img">
-                            <a href="assets/comunicados/doc4.webp" target="_blank" class="animated-scale">
-                                <img src="assets/comunicados/doc4.webp" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <h4 class="list-header" onclick="displayList(this, 'inscritos')">Lista de inscritos&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <ul id="inscritos" style="display: block;">
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Lista de inscritos</a></li>
+                </ul>
 
+                <h4 class="list-header" onclick="displayList(this, 'resultados')">Resultados&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <ul id="resultados" style="display: block;">
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Resultados</a></li>
+                </ul>
+
+                <h4 class="list-header" onclick="displayList(this, 'competidores')">Documentación competidores&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <ul id="competidores" style="display: block;">
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 1</a></li>
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 2</a></li>
+                </ul>
+
+                <h4 class="list-header" onclick="displayList(this, 'comisarios')">Documentación comisarios&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <ul id="comisarios" style="display: block;">
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 1</a></li>
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Documentacion 2</a></li>
+                </ul>
+
+                <h4 class="list-header" onclick="displayList(this, 'outros')">Outros&nbsp;&nbsp;<i class="fa fa-angle-down" style="transition: transform 0.3s"></i></h4>
+                <ul id="outros" style="display: block;">
+                    <li class="list-li"><a href="XXXXX" target="_blank"><i class="fa fa-file-image-o"></i>&nbsp;&nbsp;Cartel 2024</a></li>
+                </ul>
+
+            </div>
         </div>
 
     </article>
+
+
 </div>
 
 <footer>
