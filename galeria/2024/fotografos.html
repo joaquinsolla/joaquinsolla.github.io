@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <title>2024 / GALERÍA / ESCUDERÍA PONTE CALDELAS</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <meta name="description" content="Páxina web oficial da Escudería de rally de Ponte Caldelas. Organizadores da
+    subida a Ponte Caldelas.">
+    <meta name="keywords" content="Ponte Caldelas, escuderia ponte caldelas, subida ponte caldelas, rally, caldelas,
+    concello, pontevedra, galicia, rallie, coches, competicion, carcross">
+
+    <link rel="icon" href="/assets/icons_and_logos/icon_black.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/assets/icons_and_logos/icon_white.ico" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type='text/javascript' src='../../scripts/no_context_menu.js'></script>
+    <script type='text/javascript' src='../../scripts/navigation.js'></script>
+
+    <script type="text/javascript" src="../../scripts/progress_bar.js"></script>
+</head>
+
+<body>
+
+<div id="main_nav" class="main_nav">
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('main_nav');
+        const deadZone = 50;
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (Math.abs(scrollTop - lastScrollTop) > deadZone) {
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = '-12vh';
+                } else {
+                    // Scrolling up
+                    navbar.style.top = '0';
+                }
+
+                lastScrollTop = scrollTop;
+            }
+        });
+    </script>
+    <ul>
+        <li class="nav_to_hide_on_big animated-scale-severe"><p onclick="showPopUpNav()">MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
+        <li class="nav_logo animated-scale-severe"><a href="../../index.html"><img src="../../assets/icons_and_logos/logo.webp" alt=""></a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../../comunicados.html">COMUNICADOS</a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../../merchandising.html">MERCHANDISING</a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../../escuderia.html">A ESCUDERIA</a></li>
+        <li class="nav_to_hide_on_small animated-scale-severe"><a href="../../galeria.html">GALERIA</a></li>
+        <li class="nav_last animated-scale-severe"><a href="../../contacto.html">CONTACTO</a></li>
+    </ul>
+
+    <div id="pop_up_nav" class="pop_up_nav">
+        <ul>
+            <script>
+                function closePopUpAndScrollToIntro(){
+                    showPopUpNav()
+                    scrollToIntro()
+                }
+            </script>
+            <li class="animated-scale"><a href="../../comunicados.html">COMUNICADOS</a></li>
+            <li class="animated-scale"><a href="../../merchandising.html">MERCHANDISING</a></li>
+            <li class="animated-scale"><a href="../../escuderia.html">A ESCUDERIA</a></li>
+            <li class="animated-scale"><a href="../../galeria.html">GALERIA</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="content">
+    <article class="article-header">
+        <div style="height: 100%; width: 100%; align-content: center; text-align: center; margin-top: 5vh">
+            <img class="first-article-img" src="../../assets/icons_and_logos/escuderia_letras.webp" alt="">
+        </div>
+    </article>
+
+    <article id="article-galeria-2">
+        <h1><a href="../../galeria.html" style="color: white"><li class="fa fa-angle-double-left"></li></a>&nbsp;GALERÍA / 2024</h1>
+        <hr style="margin-bottom: 1rem">
+        <div class="container-with-progressbar">
+            <div class="progress-bar">
+                <div class="progress-indicator"></div>
+            </div>
+            <div style="width: 100%" class="flex-to-block">
+                <div class="flex-item-25">
+                    <img src="../../assets/galeria/carteles/cartel-2024.webp" style="width: 100%; height: auto; margin-top: 1rem">
+                </div>
+                <div class="flex-item-75 margin-left-to-top">
+                    <script>
+                        function displayList(self, id) {
+                            var element = document.getElementById(id);
+                            var icon = self.querySelector('.fa');
+
+                            if (element.style.display === "none" || element.style.display === "") {
+                                element.style.display = "block";
+                                icon.style.transform = "none";
+                            } else {
+                                element.style.display = "none";
+                                icon.style.transform = "rotate(-90deg)";
+                            }
+                        }
+                    </script>
+                    <h2 style="margin-top: 0.5rem">Lista de fotógrafos</h2>
+                    <ul style="display: block">
+                        <li class="list-li">
+                            <a href="fotografo-1.html" target="_self">
+                                <h4 class="list-header animated-scale">Fotografo 1&nbsp;&nbsp;<i class="fa fa-angle-double-right" style="color: #bce519"></i></h4>
+                            </a>
+                        </li>
+                        <li class="list-li">
+                            <a href="fotografo-2.html" target="_self">
+                                <h4 class="list-header animated-scale">Fotografo 2&nbsp;&nbsp;<i class="fa fa-angle-double-right" style="color: #bce519"></i></h4>
+                            </a>
+                        </li>
+                        <li class="list-li">
+                            <a href="fotografo-3.html" target="_self">
+                                <h4 class="list-header animated-scale">Fotografo 3&nbsp;&nbsp;<i class="fa fa-angle-double-right" style="color: #bce519"></i></h4>
+                            </a>
+                        </li>
+                        <li class="list-li">
+                            <a href="fotografo-4.html" target="_self">
+                                <h4 class="list-header animated-scale">Fotografo 4&nbsp;&nbsp;<i class="fa fa-angle-double-right" style="color: #bce519"></i></h4>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </article>
+
+</div>
+
+
+<footer>
+    <div class="footer-content">
+        <img class="first-article-img" src="../../assets/icons_and_logos/escuderia_letras.webp" alt="" style="width: 12.5rem; height: auto">
+        <p>Páxina oficial da Escudería Ponte Caldelas, organizadores da Subida A Ponte Caldelas.</p>
+        <p style="font-weight: 600">Síguenos en redes</p>
+        <div style="display: flex">
+            <a href="https://www.instagram.com/escuderiapontecaldelas" target="_blank" style="font-size: 1.5rem" class="animated-scale-severe"><i class="fa fa-instagram"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.facebook.com/escuderiapontecaldelas/" target="_blank" style="font-size: 1.5rem" class="animated-scale-severe"><i class="fa fa-facebook-square"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
