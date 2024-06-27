@@ -95,7 +95,7 @@ h2{
 
 #article-index-1 {
     background-color: #1d1d1b;
-    background-image: url("../assets/lines.webp");
+    background-image: url("../assets/icons_and_logos/lines.webp");
     background-size: 85vh auto; /* Ajusta la altura del background */
     background-position: top right;
     background-repeat: no-repeat;
@@ -215,7 +215,7 @@ button:hover{
 
 .article-header {
     background-color: #1d1d1b;
-    background-image: url("../assets/lines.webp");
+    background-image: url("../assets/icons_and_logos/lines.webp");
     background-size: 65vh auto; /* Ajusta la altura del background */
     background-position: top right;
     background-repeat: no-repeat;
@@ -252,28 +252,6 @@ button:hover{
 
 .flex-item-50{
     width: 50%;
-}
-
-#article-merchandising-1 {
-    background-image: url("../assets/index_slick/slick2.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 33vh;
-    position: relative;
-    z-index: 0;
-}
-
-#article-merchandising-1::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    /*background-image: linear-gradient(to bottom, rgba(255,255,255,0) 95%, rgba(255,255,255, 1) 100%);*/
-    width: 100%;
-    height: 33vh;
 }
 
 #article-merchandising-2{
@@ -314,28 +292,6 @@ button:hover{
     text-align: left;
 }
 
-#article-galeria-1 {
-    background-image: url("../assets/index_slick/slick2.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 33vh;
-    position: relative;
-    z-index: 0;
-}
-
-#article-galeria-1::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    /*background-image: linear-gradient(to bottom, rgba(255,255,255,0) 95%, rgba(255,255,255, 1) 100%);*/
-    width: 100%;
-    height: 33vh;
-}
-
 #article-galeria-2{
     background: black;
     color: white;
@@ -346,6 +302,7 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem; /* Espacio entre los items */
+    margin-top: 1rem;
 }
 
 .flexbox-gallery-item {
@@ -368,10 +325,9 @@ button:hover{
 }
 
 .flexbox-gallery-item-text{
-    padding: 0.5rem 0;
     text-align: left;
-    font-weight: bold;
-    font-size: 1.75rem;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 .animated-scale{
@@ -459,6 +415,41 @@ button:hover{
     text-decoration: none;
 }
 
+.gallery-section-container {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-section-container img {
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-section-container:hover img {
+    opacity: 0.4;
+}
+
+.gallery-section-hover-text {
+    bottom: calc(50% - 1.175rem);
+    position: absolute;
+    left: calc(50% - 2.25rem);
+    opacity: 0;
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+
+}
+
+.gallery-section-container:hover .gallery-section-hover-text {
+    opacity: 1;
+}
+
+.gallery-section-small-text {
+    display: none;
+}
+
 @media (max-width: 900px) {
 
     article{
@@ -473,7 +464,7 @@ button:hover{
         background-size: 35vh auto; /* Ajusta la altura del background */
         min-height: 50vh;
         height: 50vh;
-        background-image: url("../assets/lines_small.webp");
+        background-image: url("../assets/icons_and_logos/lines_small.webp");
     }
 
     #article-index-1::after {
@@ -484,7 +475,7 @@ button:hover{
 
     .article-header {
         background-size: 33vh auto; /* Ajusta la altura del background */
-        background-image: url("../assets/lines_small.webp");
+        background-image: url("../assets/icons_and_logos/lines_small.webp");
     }
 
     #article-1-index-img{
@@ -582,5 +573,19 @@ button:hover{
         height: auto;
         max-height: 55vh;
     }
+
+    .gallery-section-hover-text {
+       display: none;
+    }
+
+    .gallery-section-small-text {
+        display: block;
+        color: white;
+        font-size: 2.25rem;
+        font-weight: bold;
+        font-family: 'Kanit', sans-serif;
+        margin-bottom: 1rem;
+    }
+
 
 }
