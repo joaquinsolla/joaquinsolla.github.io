@@ -21,6 +21,7 @@
     <script type='text/javascript' src='scripts/no_context_menu.js'></script>
     <script type='text/javascript' src='scripts/navigation.js'></script>
 
+    <script type="text/javascript" src="scripts/progress_bar.js"></script>
 </head>
 
 <body>
@@ -74,15 +75,94 @@
             <img class="first-article-img" src="assets/icons_and_logos/escuderia_letras.webp" alt="">
         </div>
     </article>
-    <article id="article-a-escuderia-1">
-        content 1
+
+    <article id="article-escuderia-2">
+        <h1>A ESCUDERÍA</h1>
+        <hr style="margin-bottom: 1rem">
+        <div class="container-with-progressbar">
+            <div class="progress-bar">
+                <div class="progress-indicator"></div>
+            </div>
+            <div style="width: 100%">
+                <script>
+                    function displayList(self, id) {
+                        var element = document.getElementById(id);
+                        var icon = self.querySelector('.fa');
+
+                        if (element.style.display === "none" || element.style.display === "") {
+                            element.style.display = "block";
+                            icon.style.transform = "none";
+                        } else {
+                            element.style.display = "none";
+                            icon.style.transform = "rotate(-90deg)";
+                        }
+                    }
+                </script>
+                <div class="flex-to-block">
+                    <div class="flex-item-50 flex-item-margin" style="text-align: justify; margin-left: 0">
+                        <h2>Quenes somos</h2>
+                        <p>No 2022 naceu este proxecto que arrancaba co único propósito de volcar en Ponte Caldelas a nosa paixón polo motor e a competición.</p>
+                        <p>Dende ese momento a nosa prioridade foi que Ponte Caldelas e o seu núcleo urbán fosen partícipes da nova versión da proba que organizamos, a Subida a Ponte Caldelas, que para nós e para moitos, é a subida da casa. Unha subida que trataremos de mellorar, sempre, edición tras edición.</p>
+                        <p>Grazas a iso toda a familia das carreiras e a afición coñeron un pouco máis de onde somos.</p>
+                        <p>Sinxelamente somos unha familia de aficionados e amantes do motor, na que todos e cada un de nós somos importantes, dende o primeiro radio, ate o último bandeira.</p>
+                        <p style="font-style: italic; margin-top: 2rem">Escudería Ponte Caldelas</p>
+                    </div>
+                    <div class="flex-item-50 flex-item-margin">
+                        <img src="assets/misc/quenessomos.webp" style="width: 100%; height: auto;" alt="">
+                    </div>
+                </div>
+
+                <hr style="margin-bottom: 1rem; border: transparent">
+
+                <div>
+                    <h2>Os nosos pilotos</h2>
+                    <hr style="margin-bottom: 1rem;">
+
+                    <div class="flex-to-block">
+                        <div class="flex-item-75 flex-item-margin" style="text-align: justify; margin-left: 0">
+                            <p><b>Piloto:</b>&nbsp;Lorem Ipsum Dolor</p>
+                            <p><b>Copiloto:</b>&nbsp;Non</p>
+                            <p><b>Vehículo(s):</b>&nbsp;Lorem Ipsum Dolor</p>
+                        </div>
+                        <div class="flex-item-25 flex-item-margin">
+                            <img src="assets/misc/piloto.webp" style="width: 100%; height: auto;" alt="">
+                        </div>
+                    </div>
+
+                    <hr style="margin-bottom: 1rem;">
+
+                    <div class="flex-to-block">
+                        <div class="flex-item-75 flex-item-margin" style="text-align: justify; margin-left: 0">
+                            <p><b>Piloto:</b>&nbsp;Lorem Ipsum Dolor</p>
+                            <p><b>Copiloto:</b>&nbsp;Lorem Ipsum</p>
+                            <p><b>Vehículo(s):</b>&nbsp;Lorem Ipsum Dolor</p>
+                        </div>
+                        <div class="flex-item-25 flex-item-margin">
+                            <img src="assets/misc/piloto.webp" style="width: 100%; height: auto;" alt="">
+                        </div>
+                    </div>
+
+                    <hr style="margin-bottom: 1rem;">
+
+                    <div class="flex-to-block">
+                        <div class="flex-item-75 flex-item-margin" style="text-align: justify; margin-left: 0">
+                            <p><b>Piloto:</b>&nbsp;Lorem Ipsum Dolor</p>
+                            <p><b>Copiloto:</b>&nbsp;Non</p>
+                            <p><b>Vehículo(s):</b>&nbsp;Lorem Ipsum Dolor</p>
+                        </div>
+                        <div class="flex-item-25 flex-item-margin">
+                            <img src="assets/misc/piloto.webp" style="width: 100%; height: auto;" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </article>
-    <article id="article-a-escuderia-2">
-        content 2
-    </article>
-    <article id="article-a-escuderia-3">
-        content 3
-    </article>
+
+
 </div>
 
 <footer>
