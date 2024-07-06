@@ -472,6 +472,12 @@ button:hover{
     margin-left: 1.5rem;
 }
 
+#article-contacto-2{
+    background: black;
+    color: white;
+    min-height: auto;
+}
+
 @media (max-width: 900px) {
 
     article{
