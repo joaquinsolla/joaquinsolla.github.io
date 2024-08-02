@@ -1,3 +1,1 @@
-# escuderiapontecaldelas
-
-Testing server
+Joaquín Solla
